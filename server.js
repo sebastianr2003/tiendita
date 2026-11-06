@@ -522,17 +522,27 @@ app.get(['/sw.js', '/sw'], (req, res) => {
 // ENDPOINTS DE API: GESTIÓN Y SINCRONIZACIÓN AUTOMÁTICA DE PRODUCTOS Y VERSIÓN
 // =========================================================================
 
-// Endpoint de configuración para el frontend (inyecta variables de entorno)
+// Endpoint de configuración para el frontend (inyecta variables de entorno y firebase-applet-config.json)
 app.get('/api/config', (req, res) => {
+  let appletConfig = {};
+  try {
+    const configPath = path.join(__dirname, 'firebase-applet-config.json');
+    if (fs.existsSync(configPath)) {
+      appletConfig = JSON.parse(fs.readFileSync(configPath, 'utf-8'));
+    }
+  } catch (err) {
+    console.warn('[Config] Error al leer firebase-applet-config.json:', err);
+  }
+
   res.json({
     firebase: {
-      apiKey: process.env.VITE_FIREBASE_API_KEY || "AIzaSyD4o8v98eDIoDr8nOCeLhfpS5eUiYDhwS4",
-      authDomain: process.env.VITE_FIREBASE_AUTH_DOMAIN || "round-monitor-wvd6f.firebaseapp.com",
-      projectId: process.env.VITE_FIREBASE_PROJECT_ID || "round-monitor-wvd6f",
-      storageBucket: process.env.VITE_FIREBASE_STORAGE_BUCKET || "round-monitor-wvd6f.firebasestorage.app",
-      messagingSenderId: process.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "473043111847",
-      appId: process.env.VITE_FIREBASE_APP_ID || "1:473043111847:web:9732ed2167a3d20aa9f082",
-      firestoreDatabaseId: process.env.VITE_FIREBASE_FIRESTORE_DATABASE_ID || "ai-studio-notadeventa-82ee0414-d6a9-42c4-9f23-395cfd0d7672"
+      apiKey: process.env.VITE_FIREBASE_API_KEY || appletConfig.apiKey || "AIzaSyD4o8v98eDIoDr8nOCeLhfpS5eUiYDhwS4",
+      authDomain: process.env.VITE_FIREBASE_AUTH_DOMAIN || appletConfig.authDomain || "round-monitor-wvd6f.firebaseapp.com",
+      projectId: process.env.VITE_FIREBASE_PROJECT_ID || appletConfig.projectId || "round-monitor-wvd6f",
+      storageBucket: process.env.VITE_FIREBASE_STORAGE_BUCKET || appletConfig.storageBucket || "round-monitor-wvd6f.firebasestorage.app",
+      messagingSenderId: process.env.VITE_FIREBASE_MESSAGING_SENDER_ID || appletConfig.messagingSenderId || "473043111847",
+      appId: process.env.VITE_FIREBASE_APP_ID || appletConfig.appId || "1:473043111847:web:9732ed2167a3d20aa9f082",
+      firestoreDatabaseId: process.env.VITE_FIREBASE_FIRESTORE_DATABASE_ID || appletConfig.firestoreDatabaseId || "ai-studio-notadeventa-82ee0414-d6a9-42c4-9f23-395cfd0d7672"
     }
   });
 });
