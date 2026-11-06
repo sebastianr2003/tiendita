@@ -1,6 +1,6 @@
 {
   "name": "proyeto-nota-de-venta-t",
-  "version": "2.4.38",
+  "version": "2.4.40",
   "type": "module",
   "scripts": {
     "dev": "node server.js",

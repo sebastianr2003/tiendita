@@ -218,6 +218,7 @@ function guardarVentasMasterEnDisco() {
 
 function esVentaDeHoyBackend(v) {
   if (!v || typeof v !== 'object') return false;
+
   const hoy = new Date();
   const y = hoy.getFullYear();
   const m = hoy.getMonth();
@@ -235,27 +236,36 @@ function esVentaDeHoyBackend(v) {
 
   const str = String(v.FechaTexto || v.fechaTexto || v.fecha || '').trim();
   if (str) {
-    const matchDMY = str.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{2,4})/);
-    if (matchDMY) {
-      const dia = parseInt(matchDMY[1], 10);
-      const mes = parseInt(matchDMY[2], 10) - 1;
-      let anio = parseInt(matchDMY[3], 10);
-      if (anio < 100) anio += 2000;
-      if (dia === d && mes === m && anio === y) return true;
-    }
+    // A. Formato AAAA-MM-DD o AAAA/MM/DD (Empieza con 4 dígitos)
     const matchYMD = str.match(/^(\d{4})[\/\-](\d{1,2})[\/\-](\d{1,2})/);
     if (matchYMD) {
       const anio = parseInt(matchYMD[1], 10);
       const mes = parseInt(matchYMD[2], 10) - 1;
       const dia = parseInt(matchYMD[3], 10);
-      if (dia === d && mes === m && anio === y) return true;
+      return dia === d && mes === m && anio === y;
     }
+
+    // B. Formato DD/MM/AAAA o D/M/AAAA (Termina con 4 dígitos)
+    const matchDMY = str.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})/);
+    if (matchDMY) {
+      const dia = parseInt(matchDMY[1], 10);
+      const mes = parseInt(matchDMY[2], 10) - 1;
+      const anio = parseInt(matchDMY[3], 10);
+      return dia === d && mes === m && anio === y;
+    }
+
     const p = Date.parse(str);
     if (!isNaN(p)) {
       const dt = new Date(p);
-      if (dt.getFullYear() === y && dt.getMonth() === m && dt.getDate() === d) return true;
+      if (!isNaN(dt.getTime())) {
+        return dt.getFullYear() === y && dt.getMonth() === m && dt.getDate() === d;
+      }
     }
   }
+
+  // Fallback para banderas explícitas de la sesión actual de hoy
+  if (v._guardadaHoy === true || v.esDeHoy === true) return true;
+
   return false;
 }
 

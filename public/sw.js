@@ -1,6 +1,6 @@
-const CACHE_NAME = 'sistema-ventas-pwa-v2438';
-const IMAGE_CACHE_NAME = 'sistema-ventas-images-v2438';
-const SCRIPT_CACHE_NAME = 'sistema-ventas-scripts-v2438';
+const CACHE_NAME = 'sistema-ventas-pwa-v2440';
+const IMAGE_CACHE_NAME = 'sistema-ventas-images-v2440';
+const SCRIPT_CACHE_NAME = 'sistema-ventas-scripts-v2440';
 
 const STATIC_ASSETS = [
   '/',

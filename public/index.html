@@ -18,7 +18,7 @@
   <meta property="og:title" content="Sistema de Ventas" />
   <meta property="og:description" content="Sistema de ventas y generación de notas de venta/tickets con sincronización Firebase" />
   <link rel="prefetch" href="/admin.html" />
-  <link rel="stylesheet" href="/ticket.css?v=2438" />
+  <link rel="stylesheet" href="/ticket.css?v=2440" />
   <script src="/html2canvas.min.js" defer></script>
   <script>
     // Declaración temprana de funciones globales de UI para prevenir ReferenceError
@@ -4623,7 +4623,7 @@
   <div id="ticket-impresion"></div>
 
   <script type="module">
-    import { app, auth, db, handleFirestoreError, OperationType, iniciarSesionConGoogle, cerrarSesionGoogle, onAuthStateChanged, esAdmin, esUsuarioAutorizado, ADMIN_EMAILS, USUARIOS_AUTORIZADOS_LISTA, asegurarAutenticacionFirebase } from "/auth.js?v=2438";
+    import { app, auth, db, handleFirestoreError, OperationType, iniciarSesionConGoogle, cerrarSesionGoogle, onAuthStateChanged, esAdmin, esUsuarioAutorizado, ADMIN_EMAILS, USUARIOS_AUTORIZADOS_LISTA, asegurarAutenticacionFirebase } from "/auth.js?v=2440";
 
 
     import {
@@ -4648,7 +4648,7 @@
       enableNetwork,
       disableNetwork
     } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
-    import { generarEstructuraTicketHTML, renderizarTicketEnCanvasDirecto, normalizarDatosTicket } from "/ticket.js?v=2438";
+    import { generarEstructuraTicketHTML, renderizarTicketEnCanvasDirecto, normalizarDatosTicket } from "/ticket.js?v=2440";
 
     try {
       setLogLevel("error");
@@ -6292,6 +6292,17 @@
           }
           return false;
         };
+
+        // Preservar primero las notas activas en memoria de la sesión actual
+        if (Array.isArray(listaVentasCache) && listaVentasCache.length > 0) {
+          for (const v of listaVentasCache) {
+            if (!v) continue;
+            const clave = String(v.CodigoNota || v.codigoNota || v.Lista || v.lista || v.idDoc || v.id || '').trim().toLowerCase();
+            const idDoc = String(v.idDoc || v.id || '').trim().toLowerCase();
+            if (!clave || esTomb(clave, idDoc)) continue;
+            mapaUnicos.set(clave, v);
+          }
+        }
 
         for (const fuente of fuentes) {
           if (!fuente) continue;
@@ -10322,12 +10333,29 @@
           });
         });
 
+        // Integrar cualquier nota local o del día que esté en memoria
+        const idsRemotosInit = new Set(ventasTemp.map(v => String(v.idDoc || v.id || "")));
+        const codigosRemotosInit = new Set(ventasTemp.map(v => String(v.codigoNota || v.lista || v.CodigoNota || v.Lista || "").trim().toLowerCase()));
+
+        if (Array.isArray(listaVentasCache)) {
+          listaVentasCache.forEach(vLocal => {
+            if (!vLocal) return;
+            const idLoc = String(vLocal.idDoc || vLocal.id || "");
+            const codLoc = String(vLocal.codigoNota || vLocal.lista || vLocal.CodigoNota || vLocal.Lista || "").trim().toLowerCase();
+            const esLocal = idLoc.startsWith("local_") || idLoc.includes("local") || !idLoc;
+            const esDeHoy = esVentaDeHoy(vLocal);
+            if ((esLocal || esDeHoy) && (!idLoc || !idsRemotosInit.has(idLoc)) && (!codLoc || !codigosRemotosInit.has(codLoc))) {
+              ventasTemp.push({ ...vLocal, esDeHoy: true, _guardadaHoy: true });
+              if (idLoc) idsRemotosInit.add(idLoc);
+              if (codLoc) codigosRemotosInit.add(codLoc);
+            }
+          });
+        }
+
         if (ventasTemp.length > 0) {
           ventasTemp.sort((a, b) => b.timestamp - a.timestamp);
           listaVentasCache = ventasTemp;
-          try {
-            AppStorage.setItem("ventas_del_dia", JSON.stringify(ventasTemp));
-          } catch(e) {}
+          guardarVentasDelDiaResguardadas(ventasTemp);
           sincronizarCorrelativoConVentas(ventasTemp);
           actualizarFrecuenciaClientesDesdeVentas(ventasTemp);
 
@@ -10415,6 +10443,7 @@
 
     function esVentaDeHoy(v) {
       if (!v || typeof v !== "object") return false;
+
       const hoy = new Date();
       const y = hoy.getFullYear();
       const m = hoy.getMonth();
@@ -10448,17 +10477,7 @@
       // 3. Revisión de cadenas de fecha (FechaTexto, fecha, fechaTexto)
       const strFecha = String(v.FechaTexto || v.fechaTexto || v.fecha || v.Fecha || "").trim();
       if (strFecha) {
-        // Formato DD/MM/AAAA o D/M/AAAA
-        const matchDMY = strFecha.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{2,4})/);
-        if (matchDMY) {
-          const dia = parseInt(matchDMY[1], 10);
-          const mes = parseInt(matchDMY[2], 10) - 1;
-          let anio = parseInt(matchDMY[3], 10);
-          if (anio < 100) anio += 2000;
-          return dia === d && mes === m && anio === y;
-        }
-
-        // Formato AAAA-MM-DD
+        // A. Formato AAAA-MM-DD o AAAA/MM/DD (Empieza con 4 dígitos)
         const matchYMD = strFecha.match(/^(\d{4})[\/\-](\d{1,2})[\/\-](\d{1,2})/);
         if (matchYMD) {
           const anio = parseInt(matchYMD[1], 10);
@@ -10467,13 +10486,27 @@
           return dia === d && mes === m && anio === y;
         }
 
-        // Parseo estándar de fecha
+        // B. Formato DD/MM/AAAA o D/M/AAAA (Termina con 4 dígitos)
+        const matchDMY = strFecha.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})/);
+        if (matchDMY) {
+          const dia = parseInt(matchDMY[1], 10);
+          const mes = parseInt(matchDMY[2], 10) - 1;
+          const anio = parseInt(matchDMY[3], 10);
+          return dia === d && mes === m && anio === y;
+        }
+
+        // C. Parseo estándar Date.parse
         const p = Date.parse(strFecha);
         if (!isNaN(p)) {
           const dt = new Date(p);
-          return dt.getFullYear() === y && dt.getMonth() === m && dt.getDate() === d;
+          if (!isNaN(dt.getTime())) {
+            return dt.getFullYear() === y && dt.getMonth() === m && dt.getDate() === d;
+          }
         }
       }
+
+      // 4. Marca explícita de la sesión actual de hoy
+      if (v._guardadaHoy === true || v.esDeHoy === true) return true;
 
       return false;
     }
