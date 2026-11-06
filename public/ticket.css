@@ -167,17 +167,32 @@
     break-after: avoid !important;
 }
 
-#ticket-impresion {
-    display: none !important;
-    visibility: hidden !important;
-    position: absolute !important;
-    top: -9999px !important;
-    left: -9999px !important;
-    width: 0 !important;
-    height: 0 !important;
-    overflow: hidden !important;
-    pointer-events: none !important;
-    opacity: 0 !important;
+@media screen {
+    #ticket-impresion {
+        display: none;
+        visibility: hidden;
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        width: 80mm;
+        height: 0;
+        overflow: hidden;
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    #ticket-impresion.preparando-impresion {
+        display: block !important;
+        visibility: hidden !important;
+        position: absolute !important;
+        top: -9999px !important;
+        left: -9999px !important;
+        width: 80mm !important;
+        max-width: 80mm !important;
+        height: auto !important;
+        overflow: visible !important;
+        opacity: 0 !important;
+    }
 }
 
 @media print {
@@ -277,7 +292,10 @@
     #ticket-impresion {
         display: block !important;
         visibility: visible !important;
+        opacity: 1 !important;
         position: static !important;
+        top: auto !important;
+        left: auto !important;
         width: 80mm !important;
         max-width: 80mm !important;
         min-width: 80mm !important;
@@ -301,6 +319,16 @@
         break-before: auto !important;
         page-break-after: avoid !important;
         break-after: avoid !important;
+    }
+
+    #ticket-impresion,
+    #ticket-impresion * {
+        visibility: visible !important;
+        opacity: 1 !important;
+        color: #000000 !important;
+        box-sizing: border-box !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
     }
 
     #ticket-impresion > *:last-child,
@@ -363,10 +391,11 @@
     }
 
     #ticket-impresion .ticket-item-bloque div,
+    #ticket-impresion .ticket-item-precios-row,
     #ticket-impresion .ticket-total-row {
         display: flex !important;
         justify-content: space-between !important;
-        align-items: center !important;
+        align-items: baseline !important;
         width: 100% !important;
         box-sizing: border-box !important;
     }
@@ -375,14 +404,16 @@
         text-align: left !important;
         white-space: nowrap !important;
         display: inline-block !important;
-        font-weight: 400 !important;
+        font-weight: 700 !important;
+        color: #000000 !important;
     }
 
     #ticket-impresion .producto-subtotal {
         text-align: right !important;
         white-space: nowrap !important;
         display: inline-block !important;
-        font-weight: 400 !important;
+        font-weight: 900 !important;
+        color: #000000 !important;
     }
 
     .ticket-contenedor-impresion {

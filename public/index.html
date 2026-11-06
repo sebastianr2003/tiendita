@@ -18,7 +18,7 @@
   <meta property="og:title" content="Sistema de Ventas" />
   <meta property="og:description" content="Sistema de ventas y generación de notas de venta/tickets con sincronización Firebase" />
   <link rel="prefetch" href="/admin.html" />
-  <link rel="stylesheet" href="/ticket.css?v=222" />
+  <link rel="stylesheet" href="/ticket.css?v=2428" />
   <script src="/html2canvas.min.js" defer></script>
   <script>
     // Declaración temprana de funciones globales de UI para prevenir ReferenceError
@@ -4618,7 +4618,7 @@
   <div id="ticket-impresion"></div>
 
   <script type="module">
-    import { app, auth, db, handleFirestoreError, OperationType, iniciarSesionConGoogle, iniciarSesionDirectaAutorizada, cerrarSesionGoogle, onAuthStateChanged, esAdmin, esUsuarioAutorizado, ADMIN_EMAILS, USUARIOS_AUTORIZADOS_LISTA, asegurarAutenticacionFirebase } from "/auth.js?v=222";
+    import { app, auth, db, handleFirestoreError, OperationType, iniciarSesionConGoogle, iniciarSesionDirectaAutorizada, cerrarSesionGoogle, onAuthStateChanged, esAdmin, esUsuarioAutorizado, ADMIN_EMAILS, USUARIOS_AUTORIZADOS_LISTA, asegurarAutenticacionFirebase } from "/auth.js?v=2428";
     import {
       setLogLevel,
       collection,
@@ -4641,7 +4641,7 @@
       enableNetwork,
       disableNetwork
     } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
-    import { generarEstructuraTicketHTML, renderizarTicketEnCanvasDirecto, normalizarDatosTicket } from "/ticket.js?v=222";
+    import { generarEstructuraTicketHTML, renderizarTicketEnCanvasDirecto, normalizarDatosTicket } from "/ticket.js?v=2428";
 
     try {
       setLogLevel("error");
@@ -9854,10 +9854,7 @@
     };
 
     window.imprimirDesdeModal = async () => {
-      // 1. Limpiar por detrás el carrito y formulario para dejar lista una nueva nota
-      window.resetearFormularioVenta();
-
-      // 2. Mandar a imprimir manteniendo intacta la vista previa de esta venta
+      // Mandar a imprimir manteniendo intacta la vista previa de esta venta
       if (datosTicketActual) {
         prepararEImprimirTicket(datosTicketActual);
       }
@@ -9944,11 +9941,18 @@
       const ticketNorm = normalizarDatosTicket(v);
       generarEstructuraTicketHTML(ticketNorm, ticketEl);
       
-      // 1. Mostrar y prefijar ancho de 80mm para cálculo milimétrico real del spooler
-      ticketEl.style.display = "block";
-      ticketEl.style.visibility = "visible";
-      ticketEl.style.width = "80mm";
-      ticketEl.style.maxWidth = "80mm";
+      // 1. Mostrar y prefijar ancho de 80mm en posición offscreen para cálculo milimétrico real del spooler
+      ticketEl.classList.add("preparando-impresion");
+      ticketEl.style.setProperty("display", "block", "important");
+      ticketEl.style.setProperty("visibility", "visible", "important");
+      ticketEl.style.setProperty("opacity", "1", "important");
+      ticketEl.style.setProperty("position", "absolute", "important");
+      ticketEl.style.setProperty("left", "-9999px", "important");
+      ticketEl.style.setProperty("top", "0", "important");
+      ticketEl.style.setProperty("width", "80mm", "important");
+      ticketEl.style.setProperty("max-width", "80mm", "important");
+      ticketEl.style.setProperty("height", "auto", "important");
+      ticketEl.style.setProperty("z-index", "-9999", "important");
       
       const teniaBloqueoScroll = document.body.classList.contains("modal-abierto-bloquear-scroll");
       if (teniaBloqueoScroll) {
@@ -9959,11 +9963,12 @@
       document.body.style.overflow = "visible";
       document.documentElement.style.overflow = "visible";
 
-      // 2. Medir altura real del contenido para evitar que Chromium asuma Letter/A4
-      // y expulse 28cm de papel blanco sobrante
+      // 2. Medir altura real del contenido para evitar cortes y páginas en blanco
       void ticketEl.offsetHeight;
-      const alturaPx = ticketEl.scrollHeight || ticketEl.offsetHeight || ticketEl.getBoundingClientRect().height;
-      const alturaMm = Math.max(45, Math.ceil((alturaPx * 25.4) / 96) + 4);
+      const alturaPx = Math.max(ticketEl.scrollHeight || 0, ticketEl.offsetHeight || 0, ticketEl.getBoundingClientRect().height || 0);
+      const itemsCount = (Array.isArray(ticketNorm.Items) ? ticketNorm.Items.length : 0);
+      const alturaMinimaCalculada = 50 + (itemsCount * 12);
+      const alturaMm = Math.max(alturaMinimaCalculada, Math.ceil((alturaPx * 25.4) / 96) + 6);
 
       // 3. Reglas de impresión para rollo continuo térmico:
       let stylePrint = document.getElementById("style-print-exacto");
@@ -9989,17 +9994,32 @@
             margin: 0 !important;
             padding: 0 !important;
             background: #ffffff !important;
+            color: #000000 !important;
             -webkit-print-color-adjust: exact !important;
             print-color-adjust: exact !important;
+          }
+          body > *:not(#ticket-impresion) {
+            display: none !important;
+            visibility: hidden !important;
+            height: 0 !important;
+            max-height: 0 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            border: none !important;
+            overflow: hidden !important;
+            opacity: 0 !important;
           }
           #ticket-impresion {
             display: block !important;
             visibility: visible !important;
+            opacity: 1 !important;
             position: static !important;
+            top: auto !important;
+            left: auto !important;
             width: 80mm !important;
             max-width: 80mm !important;
             min-width: 80mm !important;
-            margin: 0 !important;
+            margin: 0 auto !important;
             margin-bottom: 0 !important;
             padding: 0 1.5mm 0 1.5mm !important;
             box-sizing: border-box !important;
@@ -10018,6 +10038,15 @@
             line-height: 1.25 !important;
             letter-spacing: -0.2px !important;
           }
+          #ticket-impresion,
+          #ticket-impresion * {
+            visibility: visible !important;
+            opacity: 1 !important;
+            color: #000000 !important;
+            box-sizing: border-box !important;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+          }
           .ticket-contenedor-impresion {
             width: 100% !important;
             max-width: 100% !important;
@@ -10028,8 +10057,8 @@
             overflow: visible !important;
             height: auto !important;
             max-height: none !important;
-            page-break-inside: avoid !important;
-            break-inside: avoid !important;
+            page-break-inside: auto !important;
+            break-inside: auto !important;
             page-break-after: avoid !important;
             break-after: avoid !important;
           }
@@ -10062,8 +10091,8 @@
           }
           .ticket-espacio-corte {
             width: 100% !important;
-            height: 3mm !important;
-            min-height: 3mm !important;
+            height: 1mm !important;
+            min-height: 1mm !important;
             margin: 0 !important;
             padding: 0 !important;
             page-break-before: avoid !important;
@@ -10094,11 +10123,22 @@
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
           setTimeout(() => {
+            let yaRestaurado = false;
             const restaurar = () => {
-              ticketEl.style.display = "";
-              ticketEl.style.visibility = "";
-              ticketEl.style.width = "";
-              ticketEl.style.maxWidth = "";
+              if (yaRestaurado) return;
+              yaRestaurado = true;
+
+              ticketEl.classList.remove("preparando-impresion");
+              ticketEl.style.removeProperty("display");
+              ticketEl.style.removeProperty("visibility");
+              ticketEl.style.removeProperty("opacity");
+              ticketEl.style.removeProperty("position");
+              ticketEl.style.removeProperty("left");
+              ticketEl.style.removeProperty("top");
+              ticketEl.style.removeProperty("width");
+              ticketEl.style.removeProperty("max-width");
+              ticketEl.style.removeProperty("height");
+              ticketEl.style.removeProperty("z-index");
               document.body.style.overflow = prevBodyOverflow;
               document.documentElement.style.overflow = prevHtmlOverflow;
 
@@ -10114,15 +10154,17 @@
                 if (typeof GestorNavegacion !== "undefined" && GestorNavegacion.bloquearPopstate > 0) {
                   GestorNavegacion.bloquearPopstate--;
                 }
-              }, 1800);
+              }, 500);
 
               window.removeEventListener("afterprint", restaurar);
             };
+
             window.addEventListener("afterprint", restaurar, { once: true });
-            setTimeout(restaurar, 2500);
+            // Timeout de seguridad prolongado (3 minutos) para que nunca corte mientras el usuario selecciona impresora
+            setTimeout(restaurar, 180000);
 
             window.print();
-          }, 120);
+          }, 150);
         });
       });
     }
@@ -11146,10 +11188,10 @@
 
       eliminarBorradorLocal();
 
-      if (window._actualizacionAppPendiente && typeof hayNotaActivaEnProgreso === "function" && !hayNotaActivaEnProgreso()) {
+      if (window._actualizacionAppPendiente && !window._isImprimiendoTicket && (!DOM.modal() || DOM.modal().style.display === "none") && typeof hayNotaActivaEnProgreso === "function" && !hayNotaActivaEnProgreso()) {
         console.log('[PWA Update] Nota concluida con éxito. Aplicando actualización pendiente de forma limpia...');
         setTimeout(() => {
-          if (!hayNotaActivaEnProgreso()) {
+          if (!window._isImprimiendoTicket && (!DOM.modal() || DOM.modal().style.display === "none") && !hayNotaActivaEnProgreso()) {
             window.location.reload();
           }
         }, 1200);
