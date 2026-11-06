@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <link rel="prefetch" href="/index.html" />
-<link rel="stylesheet" href="/ticket.css?v=2436" />
+<link rel="stylesheet" href="/ticket.css?v=2438" />
 <link rel="manifest" href="/manifest.json" />
 <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
 <link rel="icon" type="image/svg+xml" href="/icon.svg" />
@@ -908,8 +908,8 @@
 
   <!-- SDKs de Firebase Modular (v10) y Auth -->
   <script type="module">
-    import { generarEstructuraTicketHTML, renderizarTicketEnCanvasDirecto, normalizarDatosTicket } from "/ticket.js?v=2436";
-    import { app, auth, db, handleFirestoreError, OperationType, iniciarSesionConGoogle, iniciarSesionDirectaAutorizada, cerrarSesionGoogle, onAuthStateChanged, esAdmin, esUsuarioAutorizado, ADMIN_EMAILS, USUARIOS_AUTORIZADOS_LISTA } from "/auth.js?v=2436";
+    import { generarEstructuraTicketHTML, renderizarTicketEnCanvasDirecto, normalizarDatosTicket } from "/ticket.js?v=2438";
+    import { app, auth, db, handleFirestoreError, OperationType, iniciarSesionConGoogle, iniciarSesionDirectaAutorizada, cerrarSesionGoogle, onAuthStateChanged, esAdmin, esUsuarioAutorizado, ADMIN_EMAILS, USUARIOS_AUTORIZADOS_LISTA } from "/auth.js?v=2438";
     import {
       setLogLevel,
       collection,
@@ -2896,12 +2896,16 @@
 
       // Renderizar versión Canvas HD de alta precisión para compatibilidad total con impresoras térmicas Android (ESC/POS)
       let imgTag = "";
+      let alturaMm = 80;
       try {
         if (typeof renderizarTicketEnCanvasDirecto === "function") {
           const cvs = renderizarTicketEnCanvasDirecto(ticketNorm);
           if (cvs) {
             const dataUrl = cvs.toDataURL("image/png");
-            imgTag = `<img src="${dataUrl}" class="ticket-img-print-hd" style="width: 100%; max-width: 80mm; display: block; margin: 0 auto; background: #ffffff; border: none; page-break-inside: avoid; break-inside: avoid;" alt="Recibo" />`;
+            if (cvs.height && cvs.height > 0) {
+              alturaMm = Math.max(25, Math.ceil((cvs.height * 80) / 576));
+            }
+            imgTag = `<img src="${dataUrl}" class="ticket-img-print-hd" style="width: 80mm; max-width: 80mm; height: ${alturaMm}mm; max-height: ${alturaMm}mm; display: block; margin: 0 auto; background: #ffffff; border: none; object-fit: contain; object-position: top center;" alt="Recibo" />`;
           }
         }
       } catch (e) {
@@ -2912,11 +2916,14 @@
         ticketEl.innerHTML = imgTag;
       } else {
         generarEstructuraTicketHTML(ticketNorm, ticketEl);
+        if (ticketEl.scrollHeight && ticketEl.offsetWidth) {
+          alturaMm = Math.max(25, Math.ceil((ticketEl.scrollHeight * 80) / (ticketEl.offsetWidth || 300)));
+        }
       }
 
       // 1. Limpiar cualquier posición negativa que cause páginas en blanco en spoolers Android ESC/POS
       ticketEl.classList.remove("preparando-impresion");
-      ticketEl.style.cssText = "display: block !important; visibility: visible !important; opacity: 1 !important; position: static !important; width: 80mm !important; max-width: 80mm !important; margin: 0 auto !important; padding: 0 !important; box-sizing: border-box !important; background: #ffffff !important; color: #000000 !important;";
+      ticketEl.style.cssText = `display: block !important; visibility: visible !important; opacity: 1 !important; position: static !important; width: 80mm !important; max-width: 80mm !important; height: ${alturaMm}mm !important; margin: 0 auto !important; padding: 0 !important; box-sizing: border-box !important; background: #ffffff !important; color: #000000 !important;`;
 
       const teniaBloqueoScroll = document.body.classList.contains("modal-abierto-bloquear-scroll");
       if (teniaBloqueoScroll) {
@@ -2927,7 +2934,7 @@
       document.body.style.overflow = "visible";
       document.documentElement.style.overflow = "visible";
 
-      // 2. Inyectar reglas de impresión para rollo térmico continuo (1 sola página sin cortes ni zonas muertas)
+      // 2. Inyectar reglas de impresión para rollo térmico continuo ajustado a la altura exacta (cero blanco arriba/abajo)
       let stylePrint = document.getElementById("style-print-exacto");
       if (!stylePrint) {
         stylePrint = document.createElement("style");
@@ -2937,17 +2944,17 @@
       stylePrint.textContent = `
         @media print {
           @page {
-            size: 80mm auto !important;
+            size: 80mm ${alturaMm}mm !important;
             margin: 0mm !important;
           }
           html, body {
             width: 80mm !important;
             max-width: 80mm !important;
             min-width: 80mm !important;
-            height: auto !important;
-            min-height: 0 !important;
-            max-height: none !important;
-            overflow: visible !important;
+            height: ${alturaMm}mm !important;
+            min-height: ${alturaMm}mm !important;
+            max-height: ${alturaMm}mm !important;
+            overflow: hidden !important;
             margin: 0 !important;
             padding: 0 !important;
             background: #ffffff !important;
@@ -2970,30 +2977,37 @@
             display: block !important;
             visibility: visible !important;
             opacity: 1 !important;
-            position: static !important;
+            position: absolute !important;
             top: 0 !important;
             left: 0 !important;
             width: 80mm !important;
             max-width: 80mm !important;
             min-width: 80mm !important;
-            margin: 0 auto !important;
-            margin-bottom: 0 !important;
-            padding: 0 1.5mm 0 1.5mm !important;
+            height: ${alturaMm}mm !important;
+            max-height: ${alturaMm}mm !important;
+            min-height: ${alturaMm}mm !important;
+            margin: 0 !important;
+            padding: 0 !important;
             box-sizing: border-box !important;
-            overflow: visible !important;
-            height: auto !important;
-            max-height: none !important;
+            overflow: hidden !important;
             page-break-inside: avoid !important;
             break-inside: avoid !important;
             page-break-after: avoid !important;
             break-after: avoid !important;
             background: #ffffff !important;
             color: #000000 !important;
-            font-family: 'Courier New', Courier, monospace !important;
-            font-weight: 900 !important;
-            font-size: 14.5px !important;
-            line-height: 1.25 !important;
-            letter-spacing: -0.2px !important;
+          }
+          .ticket-img-print-hd {
+            display: block !important;
+            visibility: visible !important;
+            width: 80mm !important;
+            max-width: 80mm !important;
+            height: ${alturaMm}mm !important;
+            max-height: ${alturaMm}mm !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            object-fit: contain !important;
+            object-position: top center !important;
           }
           #ticket-impresion,
           #ticket-impresion * {
@@ -3003,70 +3017,6 @@
             box-sizing: border-box !important;
             -webkit-print-color-adjust: exact !important;
             print-color-adjust: exact !important;
-          }
-          .ticket-contenedor-impresion {
-            width: 100% !important;
-            max-width: 100% !important;
-            margin: 0 !important;
-            margin-bottom: 0 !important;
-            padding: 0 !important;
-            box-sizing: border-box !important;
-            overflow: visible !important;
-            height: auto !important;
-            max-height: none !important;
-            page-break-inside: auto !important;
-            break-inside: auto !important;
-            page-break-after: avoid !important;
-            break-after: avoid !important;
-          }
-          .ticket-items-lista {
-            width: 100% !important;
-            max-width: 100% !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            box-sizing: border-box !important;
-            overflow: visible !important;
-            height: auto !important;
-            max-height: none !important;
-            page-break-inside: auto !important;
-            break-inside: auto !important;
-          }
-          .ticket-item-bloque {
-            page-break-inside: avoid !important;
-            break-inside: avoid !important;
-            width: 100% !important;
-            box-sizing: border-box !important;
-            margin-bottom: 5px !important;
-          }
-          .ticket-header-bloque,
-          .ticket-total-bloque,
-          .ticket-total-row {
-            page-break-inside: avoid !important;
-            break-inside: avoid !important;
-            width: 100% !important;
-            box-sizing: border-box !important;
-          }
-          .ticket-espacio-corte {
-            width: 100% !important;
-            height: 1mm !important;
-            min-height: 1mm !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            page-break-before: avoid !important;
-            break-before: avoid !important;
-            page-break-inside: avoid !important;
-            break-inside: avoid !important;
-            page-break-after: avoid !important;
-            break-after: avoid !important;
-          }
-          #ticket-impresion > *:last-child,
-          .ticket-contenedor-impresion > *:last-child,
-          .ticket-total-bloque,
-          .ticket-total-bloque > *:last-child {
-            margin-bottom: 0 !important;
-            padding-bottom: 0 !important;
-            page-break-after: avoid !important;
-            break-after: avoid !important;
           }
         }
       `;

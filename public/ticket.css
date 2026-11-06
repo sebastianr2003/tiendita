@@ -202,7 +202,7 @@
         margin-bottom: 0 !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
-        size: 80mm; /* Dimensión estándar 80mm para rollo térmico */
+        size: 80mm auto; /* Dimensión estándar 80mm para rollo térmico */
     }
 
     /* 1. Ocultar de manera estricta y absoluta todo elemento hijo directo del body excepto #ticket-impresion */

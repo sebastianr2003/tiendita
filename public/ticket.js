@@ -317,9 +317,11 @@ export function renderizarTicketEnCanvasDirecto(rawV) {
     if (!rawV) return null;
     const v = normalizarDatosTicket(rawV);
     const items = v.Items;
-    const baseWidth = 380; // Optimizado para 80mm
-    const basePadding = 18;
-    const baseMaxWidthText = baseWidth - (basePadding * 2);
+
+    // Ancho nativo milimétrico para cabezal térmico de 80mm (576px a 203 DPI)
+    const baseWidth = 576;
+    const paddingX = 8;
+    const baseMaxWidthText = baseWidth - (paddingX * 2);
 
     const dummyCanvas = document.createElement("canvas");
     const dummyCtx = dummyCanvas.getContext("2d");
@@ -358,42 +360,41 @@ export function renderizarTicketEnCanvasDirecto(rawV) {
         return lineas;
     }
 
-    // Medir altura en escala base (1x)
-    let baseHeight = basePadding;
-    dummyCtx.font = 'bold 20px "Courier New", Courier, monospace';
-    baseHeight += 26; // Título RECIBO
-    baseHeight += 16; // Separador
+    // 1. Medir altura requerida milimétricamente (pegado arriba con 4px)
+    let baseHeight = 4;
+    dummyCtx.font = 'bold 26px "Courier New", Courier, monospace';
+    baseHeight += 32; // Título RECIBO
 
-    dummyCtx.font = 'bold 14px "Courier New", Courier, monospace';
-    baseHeight += 20; // Lista
+    dummyCtx.font = 'bold 22px "Courier New", Courier, monospace';
+    baseHeight += 28; // Lista
 
     const lineasCliente = partirTextoEnLineas(dummyCtx, `Cliente: ${v.Cliente}`, baseMaxWidthText);
-    baseHeight += Math.max(1, lineasCliente.length) * 20; // Cliente
+    baseHeight += Math.max(1, lineasCliente.length) * 28; // Cliente
 
-    baseHeight += 20; // Fecha
-    baseHeight += 20; // Contador de ítems
+    baseHeight += 28; // Fecha
+    baseHeight += 26; // Contador de ítems
     baseHeight += 16; // Separador
 
     const itemsProcesados = [];
     if (items.length === 0) {
-        baseHeight += 24; // Mensaje sin ítems
+        baseHeight += 30; // Mensaje sin ítems
     } else {
         items.forEach(item => {
-            dummyCtx.font = 'bold 15px "Courier New", Courier, monospace';
+            dummyCtx.font = 'bold 23px "Courier New", Courier, monospace';
             const nombreProd = item.producto;
             const lineasNombre = partirTextoEnLineas(dummyCtx, nombreProd, baseMaxWidthText);
 
             let lineasDetalle = [];
             if (item.detalle) {
-                dummyCtx.font = 'italic 12px "Courier New", Courier, monospace';
+                dummyCtx.font = 'italic 19px "Courier New", Courier, monospace';
                 lineasDetalle = partirTextoEnLineas(dummyCtx, `(${item.detalle})`, baseMaxWidthText);
             }
 
-            let itemH = lineasNombre.length * 18;
+            let itemH = lineasNombre.length * 28;
             if (lineasDetalle.length > 0) {
-                itemH += lineasDetalle.length * 15;
+                itemH += lineasDetalle.length * 24;
             }
-            itemH += 22; // Cantidad x Precio + Subtotal
+            itemH += 30; // Cantidad x Precio + Subtotal
             itemH += 8;  // Margen entre ítems
 
             itemsProcesados.push({
@@ -408,19 +409,11 @@ export function renderizarTicketEnCanvasDirecto(rawV) {
     }
 
     baseHeight += 16; // Separador
-    baseHeight += 38; // TOTAL
-    baseHeight += basePadding + 10; // Margen final (Buffer de seguridad)
+    baseHeight += 44; // TOTAL
+    baseHeight += 6;  // Margen final pegado abajo sin espacio en blanco desperdiciado
 
-    // Escalado adaptativo para HD (2x)
-    const maxAllowedCanvasH = 8192;
-    let scale = 2;
-    if (baseHeight * scale > maxAllowedCanvasH) {
-        scale = Math.max(1, maxAllowedCanvasH / baseHeight);
-    }
-
-    const width = Math.round(baseWidth * scale);
-    const padding = Math.round(basePadding * scale);
-    const canvasHeight = Math.ceil(baseHeight * scale);
+    const width = baseWidth;
+    const canvasHeight = Math.ceil(baseHeight);
 
     const canvas = document.createElement("canvas");
     canvas.width = width;
@@ -433,100 +426,100 @@ export function renderizarTicketEnCanvasDirecto(rawV) {
 
     // Texto sólido de alto contraste
     ctx.fillStyle = "#000000";
-    let y = padding + (16 * scale);
+    let y = 28; // Pegado arriba
 
-    ctx.font = `bold ${20 * scale}px "Courier New", Courier, monospace`;
+    ctx.font = 'bold 26px "Courier New", Courier, monospace';
     ctx.textAlign = "center";
     ctx.fillText("RECIBO", width / 2, y);
-    y += 14 * scale;
+    y += 16;
 
     function dibujarLinea(posy) {
         ctx.save();
         ctx.strokeStyle = "#000000";
-        ctx.lineWidth = 1.5 * scale;
-        ctx.setLineDash([4 * scale, 3 * scale]);
+        ctx.lineWidth = 2;
+        ctx.setLineDash([6, 4]);
         ctx.beginPath();
-        ctx.moveTo(padding, posy);
-        ctx.lineTo(width - padding, posy);
+        ctx.moveTo(paddingX, posy);
+        ctx.lineTo(width - paddingX, posy);
         ctx.stroke();
         ctx.restore();
     }
 
     dibujarLinea(y);
-    y += 18 * scale;
+    y += 28;
 
     ctx.textAlign = "left";
-    ctx.font = `bold ${14 * scale}px "Courier New", Courier, monospace`;
-    ctx.fillText(`Lista:   ${v.Lista}`, padding, y);
-    y += 20 * scale;
+    ctx.font = 'bold 22px "Courier New", Courier, monospace';
+    ctx.fillText(`Lista:   ${v.Lista}`, paddingX, y);
+    y += 28;
 
     lineasCliente.forEach(lin => {
-        ctx.fillText(lin, padding, y);
-        y += 20 * scale;
+        ctx.fillText(lin, paddingX, y);
+        y += 28;
     });
 
-    ctx.fillText(`Fecha:   ${v.FechaTexto}`, padding, y);
-    y += 18 * scale;
+    ctx.fillText(`Fecha:   ${v.FechaTexto}`, paddingX, y);
+    y += 28;
 
-    ctx.font = `bold ${13 * scale}px "Courier New", Courier, monospace`;
-    ctx.fillText(`Ítems:   ${items.length} ${items.length === 1 ? 'producto' : 'productos'}`, padding, y);
-    y += 14 * scale;
+    ctx.font = 'bold 20px "Courier New", Courier, monospace';
+    ctx.fillText(`Ítems:   ${items.length} ${items.length === 1 ? 'producto' : 'productos'}`, paddingX, y);
+    y += 16;
 
     dibujarLinea(y);
-    y += 20 * scale;
+    y += 28;
 
     // Dibujar todos los ítems
     if (items.length === 0) {
         ctx.textAlign = "center";
-        ctx.font = `italic ${13 * scale}px "Courier New", Courier, monospace`;
+        ctx.font = 'italic 20px "Courier New", Courier, monospace';
         ctx.fillStyle = "#64748b";
         ctx.fillText("(Sin productos registrados)", width / 2, y);
-        y += 20 * scale;
+        y += 28;
         ctx.fillStyle = "#000000";
     } else {
         itemsProcesados.forEach(({ item, lineasNombre, lineasDetalle }) => {
             ctx.textAlign = "left";
             ctx.fillStyle = "#000000";
-            ctx.font = `bold ${15 * scale}px "Courier New", Courier, monospace`;
+            ctx.font = 'bold 23px "Courier New", Courier, monospace';
             lineasNombre.forEach(lin => {
-                ctx.fillText(lin, padding, y);
-                y += 18 * scale;
+                ctx.fillText(lin, paddingX, y);
+                y += 28;
             });
 
             if (lineasDetalle.length > 0) {
-                ctx.font = `italic ${12 * scale}px "Courier New", Courier, monospace`;
+                ctx.font = 'italic 19px "Courier New", Courier, monospace';
                 ctx.fillStyle = "#475569";
                 lineasDetalle.forEach(lin => {
-                    ctx.fillText(lin, padding, y);
-                    y += 15 * scale;
+                    ctx.fillText(lin, paddingX, y);
+                    y += 24;
                 });
                 ctx.fillStyle = "#000000";
             }
 
-            ctx.font = `bold ${14 * scale}px "Courier New", Courier, monospace`;
+            ctx.font = 'bold 22px "Courier New", Courier, monospace';
             ctx.textAlign = "left";
             const cant = Number(item.cantidad || 0);
             const precio = Number(item.precio || 0);
             const subtotal = Number(item.subtotal || 0);
-            ctx.fillText(`${cant} x ${precio.toFixed(2)}`, padding, y);
+            ctx.fillText(`${cant} x ${precio.toFixed(2)}`, paddingX, y);
 
             ctx.textAlign = "right";
-            ctx.fillText(`Bs. ${subtotal.toFixed(2)}`, width - padding, y);
-            y += 26 * scale;
+            ctx.fillText(`Bs. ${subtotal.toFixed(2)}`, width - paddingX, y);
+            y += 36;
         });
     }
 
-    dibujarLinea(y - 4 * scale);
-    y += 22 * scale;
+    dibujarLinea(y - 6);
+    y += 32;
 
     ctx.textAlign = "left";
-    ctx.font = `bold ${18 * scale}px "Courier New", Courier, monospace`;
-    ctx.fillText("TOTAL:", padding, y);
+    ctx.font = 'bold 26px "Courier New", Courier, monospace';
+    ctx.fillText("TOTAL:", paddingX, y);
 
     ctx.textAlign = "right";
-    ctx.font = `bold ${18 * scale}px "Courier New", Courier, monospace`;
+    ctx.font = 'bold 26px "Courier New", Courier, monospace';
     const totalVal = Number(v.Total || 0);
-    ctx.fillText(`Bs. ${totalVal.toFixed(2)}`, width - padding, y);
+    ctx.fillText(`Bs. ${totalVal.toFixed(2)}`, width - paddingX, y);
 
     return canvas;
 }
