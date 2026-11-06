@@ -18,7 +18,7 @@
   <meta property="og:title" content="Sistema de Ventas" />
   <meta property="og:description" content="Sistema de ventas y generación de notas de venta/tickets con sincronización Firebase" />
   <link rel="prefetch" href="/admin.html" />
-  <link rel="stylesheet" href="/ticket.css?v=2435" />
+  <link rel="stylesheet" href="/ticket.css?v=2436" />
   <script src="/html2canvas.min.js" defer></script>
   <script>
     // Declaración temprana de funciones globales de UI para prevenir ReferenceError
@@ -4623,7 +4623,7 @@
   <div id="ticket-impresion"></div>
 
   <script type="module">
-    import { app, auth, db, handleFirestoreError, OperationType, iniciarSesionConGoogle, cerrarSesionGoogle, onAuthStateChanged, esAdmin, esUsuarioAutorizado, ADMIN_EMAILS, USUARIOS_AUTORIZADOS_LISTA, asegurarAutenticacionFirebase } from "/auth.js?v=2435";
+    import { app, auth, db, handleFirestoreError, OperationType, iniciarSesionConGoogle, cerrarSesionGoogle, onAuthStateChanged, esAdmin, esUsuarioAutorizado, ADMIN_EMAILS, USUARIOS_AUTORIZADOS_LISTA, asegurarAutenticacionFirebase } from "/auth.js?v=2436";
 
 
     import {
@@ -4648,7 +4648,7 @@
       enableNetwork,
       disableNetwork
     } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
-    import { generarEstructuraTicketHTML, renderizarTicketEnCanvasDirecto, normalizarDatosTicket } from "/ticket.js?v=2435";
+    import { generarEstructuraTicketHTML, renderizarTicketEnCanvasDirecto, normalizarDatosTicket } from "/ticket.js?v=2436";
 
     try {
       setLogLevel("error");
@@ -9898,11 +9898,30 @@
       const ticketEl = document.getElementById("ticket-impresion");
       if (!ticketEl) return;
       const ticketNorm = normalizarDatosTicket(v);
-      generarEstructuraTicketHTML(ticketNorm, ticketEl);
+      
+      // Renderizar versión Canvas HD de alta precisión para compatibilidad total con impresoras térmicas Android (ESC/POS)
+      let imgTag = "";
+      try {
+        if (typeof renderizarTicketEnCanvasDirecto === "function") {
+          const cvs = renderizarTicketEnCanvasDirecto(ticketNorm);
+          if (cvs) {
+            const dataUrl = cvs.toDataURL("image/png");
+            imgTag = `<img src="${dataUrl}" class="ticket-img-print-hd" style="width: 100%; max-width: 80mm; display: block; margin: 0 auto; background: #ffffff; border: none; page-break-inside: avoid; break-inside: avoid;" alt="Recibo" />`;
+          }
+        }
+      } catch (e) {
+        console.warn("Aviso generando canvas para impresión:", e);
+      }
+
+      if (imgTag) {
+        ticketEl.innerHTML = imgTag;
+      } else {
+        generarEstructuraTicketHTML(ticketNorm, ticketEl);
+      }
       
       // 1. Limpiar cualquier posición negativa que cause páginas en blanco en spoolers Android ESC/POS
       ticketEl.classList.remove("preparando-impresion");
-      ticketEl.style.cssText = "display: block !important; visibility: visible !important; opacity: 1 !important; position: static !important; width: 80mm !important; max-width: 80mm !important; margin: 0 auto !important; padding: 0 1.5mm !important; box-sizing: border-box !important; background: #ffffff !important; color: #000000 !important;";
+      ticketEl.style.cssText = "display: block !important; visibility: visible !important; opacity: 1 !important; position: static !important; width: 80mm !important; max-width: 80mm !important; margin: 0 auto !important; padding: 0 !important; box-sizing: border-box !important; background: #ffffff !important; color: #000000 !important;";
 
       const teniaBloqueoScroll = document.body.classList.contains("modal-abierto-bloquear-scroll");
       if (teniaBloqueoScroll) {
