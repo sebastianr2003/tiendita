@@ -1,12 +1,12 @@
 {
-  "projectId": "round-monitor-wvd6f",
-  "appId": "1:473043111847:web:9732ed2167a3d20aa9f082",
-  "apiKey": "AIzaSyD4o8v98eDIoDr8nOCeLhfpS5eUiYDhwS4",
-  "authDomain": "round-monitor-wvd6f.firebaseapp.com",
-  "firestoreDatabaseId": "ai-studio-notadeventa-82ee0414-d6a9-42c4-9f23-395cfd0d7672",
-  "storageBucket": "round-monitor-wvd6f.firebasestorage.app",
-  "messagingSenderId": "473043111847",
+  "projectId": "nota-de-ventas-547cc",
+  "appId": "1:796813354283:web:7a7969e76105517d10916e",
+  "apiKey": "AIzaSyBgA_SaBkd-OYzi7eu1f_3g53enV7ZcEeg",
+  "authDomain": "nota-de-ventas-547cc.firebaseapp.com",
+  "firestoreDatabaseId": "ai-studio-tiendita-02125c81-7643-45ba-94f1-e96c7d53d5a7",
+  "storageBucket": "nota-de-ventas-547cc.firebasestorage.app",
+  "messagingSenderId": "796813354283",
   "measurementId": "",
-  "oAuthClientId": "473043111847-5t5fnb7ab521eqgpmvcpbkuidhf03mjm.apps.googleusercontent.com",
+  "oAuthClientId": "796813354283-fta0rqpjlsb71gaatrb6k32s37rmp64m.apps.googleusercontent.com",
   "recaptchaSiteKey": ""
 }

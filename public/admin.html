@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <link rel="prefetch" href="/index.html" />
-<link rel="stylesheet" href="/ticket.css?v=2428" />
+<link rel="stylesheet" href="/ticket.css?v=2434" />
 <link rel="manifest" href="/manifest.json" />
 <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
 <link rel="icon" type="image/svg+xml" href="/icon.svg" />
@@ -908,8 +908,8 @@
 
   <!-- SDKs de Firebase Modular (v10) y Auth -->
   <script type="module">
-    import { generarEstructuraTicketHTML, renderizarTicketEnCanvasDirecto, normalizarDatosTicket } from "/ticket.js?v=2428";
-    import { app, auth, db, handleFirestoreError, OperationType, iniciarSesionConGoogle, iniciarSesionDirectaAutorizada, cerrarSesionGoogle, onAuthStateChanged, esAdmin, esUsuarioAutorizado, ADMIN_EMAILS, USUARIOS_AUTORIZADOS_LISTA } from "/auth.js?v=2428";
+    import { generarEstructuraTicketHTML, renderizarTicketEnCanvasDirecto, normalizarDatosTicket } from "/ticket.js?v=2434";
+    import { app, auth, db, handleFirestoreError, OperationType, iniciarSesionConGoogle, iniciarSesionDirectaAutorizada, cerrarSesionGoogle, onAuthStateChanged, esAdmin, esUsuarioAutorizado, ADMIN_EMAILS, USUARIOS_AUTORIZADOS_LISTA } from "/auth.js?v=2434";
     import {
       setLogLevel,
       collection,
@@ -1047,14 +1047,13 @@
 
     function cargarCacheLocalUsuario() {
       try {
-        const userCache = AppStorage.getItem("usuario_admin_cache") || localStorage.getItem("usuario_admin_cache");
-        if (userCache) {
-          const parsed = JSON.parse(userCache);
-          if (parsed && parsed.email) {
-            return parsed;
-          }
+        if (localStorage.getItem("usuario_cerro_sesion_manual") === "true") return null;
+        const uCache = localStorage.getItem("usuario_admin_cache") || (typeof AppStorage !== "undefined" ? AppStorage.getItem("usuario_admin_cache") : null);
+        if (uCache) {
+          const p = JSON.parse(uCache);
+          if (p && p.email && esAdmin(p)) return p;
         }
-      } catch (e) {}
+      } catch(e) {}
       return null;
     }
 
@@ -1141,11 +1140,18 @@
     window.iniciarSesionConGoogle = async () => {
       try {
         const user = await iniciarSesionConGoogle();
-        actualizarUIUsuario(user);
-        mostrarMensaje(`👋 ¡Bienvenido/a, ${user.displayName || user.email}!`);
+        if (user) {
+          actualizarUIUsuario(user);
+          mostrarMensaje(`👋 ¡Bienvenido/a, ${user.displayName || user.email}!`);
+        }
       } catch (e) {
         console.error("Error al iniciar sesión:", e);
-        mostrarMensaje("❌ No se pudo iniciar sesión con Google", "error");
+        if (e && e.code === "auth/unauthorized-domain") {
+          const currentHost = window.location.hostname;
+          mostrarMensaje(`⚠️ Dominio no autorizado en Firebase ("${currentHost}"). Por favor añádelo en Firebase Console (proyecto nota-de-ventas-547cc > Authentication > Settings > Authorized domains).`, "error");
+        } else {
+          mostrarMensaje("❌ No se pudo iniciar sesión con Google", "error");
+        }
       }
     };
 

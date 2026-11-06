@@ -15,8 +15,13 @@ import {
   persistentLocalCache,
   persistentMultipleTabManager,
   getDocFromServer,
-  doc
+  doc,
+  setLogLevel
 } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+
+try {
+  setLogLevel("error");
+} catch (e) {}
 
 // Intentar cargar configuración dinámica desde el backend
 let dynamicConfig = null;
@@ -31,13 +36,13 @@ try {
 }
 
 export const firebaseConfig = dynamicConfig || {
-  apiKey: "AIzaSyD4o8v98eDIoDr8nOCeLhfpS5eUiYDhwS4",
-  authDomain: "round-monitor-wvd6f.firebaseapp.com",
-  projectId: "round-monitor-wvd6f",
-  storageBucket: "round-monitor-wvd6f.firebasestorage.app",
-  messagingSenderId: "473043111847",
-  appId: "1:473043111847:web:9732ed2167a3d20aa9f082",
-  firestoreDatabaseId: "ai-studio-notadeventa-82ee0414-d6a9-42c4-9f23-395cfd0d7672"
+  apiKey: "AIzaSyBgA_SaBkd-OYzi7eu1f_3g53enV7ZcEeg",
+  authDomain: "nota-de-ventas-547cc.firebaseapp.com",
+  projectId: "nota-de-ventas-547cc",
+  storageBucket: "nota-de-ventas-547cc.firebasestorage.app",
+  messagingSenderId: "796813354283",
+  appId: "1:796813354283:web:7a7969e76105517d10916e",
+  firestoreDatabaseId: "ai-studio-tiendita-02125c81-7643-45ba-94f1-e96c7d53d5a7"
 };
 
 export const app = initializeApp(firebaseConfig);
@@ -124,10 +129,20 @@ export async function iniciarSesionConGoogle() {
       throw new Error(`Acceso denegado para el correo: ${emailNoAutorizado}`);
     }
 
+    try {
+      localStorage.removeItem("usuario_cerro_sesion_manual");
+      const uData = JSON.stringify({
+        email: user.email,
+        displayName: user.displayName || user.email,
+        photoURL: user.photoURL || ""
+      });
+      localStorage.setItem("usuario_admin_cache", uData);
+    } catch (e) {}
+
     console.log("¡Bienvenido/a!", user.displayName || user.email);
     return user;
   } catch (error) {
-    console.error("Error al iniciar sesión con Google:", error);
+
     // Intentar redirect si el popup fue bloqueado por navegador móvil / PWA
     if (error && (error.code === 'auth/popup-blocked' || error.code === 'auth/cancelled-popup-request')) {
       console.log("Popup bloqueado en móvil/PWA. Probando signInWithRedirect...");
@@ -136,8 +151,11 @@ export async function iniciarSesionConGoogle() {
         return null;
       } catch (eRedirect) {
         console.error("Error en signInWithRedirect:", eRedirect);
+        throw eRedirect;
       }
     }
+
+    console.error("Error al iniciar sesión con Google:", error);
     throw error;
   }
 }
@@ -162,6 +180,7 @@ export function iniciarSesionDirectaAutorizada(email) {
 
   try {
     localStorage.setItem("usuario_admin_cache", JSON.stringify(userObj));
+    localStorage.removeItem("usuario_cerro_sesion_manual");
   } catch (e) {}
 
   return userObj;
@@ -171,6 +190,7 @@ export async function cerrarSesionGoogle() {
   try {
     try {
       localStorage.removeItem("usuario_admin_cache");
+      localStorage.setItem("usuario_cerro_sesion_manual", "true");
     } catch (e) {}
     await signOut(auth);
     console.log("Sesión cerrada correctamente.");
