@@ -1,0 +1,2608 @@
+{
+  "version": 20,
+  "ultimaActualizacion": "2026-10-26T13:58:33.920Z",
+  "ultimaRevisionDiaria": "2026-10-26T13:58:30.173Z",
+  "productos": [
+    {
+      "idDoc": "prod_1790978466800_etm61",
+      "Producto": "Seco Chico",
+      "PrecioCaja": 104,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 22:01:06",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "telefono_con_producto"
+    },
+    {
+      "idDoc": "09pTMXf0c09RVZfX5dnI",
+      "Producto": "LM Negro",
+      "PrecioCaja": 174,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 8:43:06 a.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "0EsorBgb5YiK7VPQtih6",
+      "Producto": "HONDA",
+      "PrecioCaja": 75,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "19/9/2026, 10:54:48 a.m.",
+      "UltimaEdicion": 1789829688930,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "0Nx9ycW2lOTqDu9E5KLm",
+      "Producto": "Agua 3L",
+      "PrecioCaja": 48,
+      "PrecioUnidad": 10,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "0PMSIvK54fqSKjpcnWif",
+      "Producto": "CASA REAL NEGRO",
+      "PrecioCaja": 480,
+      "PrecioUnidad": 90,
+      "FechaEdicionTexto": "16/8/2026, 1:37:09 p. m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "0Urcs0prtCZwoOMY8uyU",
+      "Producto": "PECHO 1/2",
+      "PrecioCaja": 78,
+      "PrecioUnidad": 10,
+      "FechaEdicionTexto": "16/8/2026, 1:37:41 p. m.",
+      "UltimaEdicion": 63922498661.817,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "0vecN07FcZtl21Ua8GeG",
+      "Producto": "ANTARTICA",
+      "PrecioCaja": 73,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "12/9/2026, 3:59:32 p.m.",
+      "UltimaEdicion": 1789243172416,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "0xQ5qLyoHZpFszcYyin3",
+      "Producto": "NARASHA",
+      "PrecioCaja": 75,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "29/9/2026, 11:02:10 a.m.",
+      "UltimaEdicion": 1790694130683,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "121nt7zSWujI6m6qeP5b",
+      "Producto": "AMARETO",
+      "PrecioCaja": 50,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "14/9/2026, 8:11:25 p.m.",
+      "UltimaEdicion": 1789431085526,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "162LpMGeQwPJSIMgikwA",
+      "Producto": "Jagger 1L",
+      "PrecioCaja": 3240,
+      "PrecioUnidad": 270,
+      "FechaEdicionTexto": "20/8/2026, 4:45:21 p.m.",
+      "UltimaEdicion": 63922855521.193,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "1u4MKCYd8IFL5higPgC6",
+      "Producto": "Malboro rojo",
+      "PrecioCaja": 188,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971176,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "2bmj6krkwj5pfqwWR41Z",
+      "Producto": "Huari miel lata",
+      "PrecioCaja": 198,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971176,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "2d6uuJ00WVSIjVn7YPhR",
+      "Producto": "Kolbert oporto",
+      "PrecioCaja": 147,
+      "PrecioUnidad": 30,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "2yCXIFkr4DdHfs08RWBQ",
+      "Producto": "GOLDEN LATONA",
+      "PrecioCaja": 206,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "13/9/2026, 10:47:35 a.m.",
+      "UltimaEdicion": 1789310855617,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "3HnjZKlp5sbNpWHV8fv9",
+      "Producto": "COCA PEQUE",
+      "PrecioCaja": 40,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "3I1HObWAVpTmwGlUKGSX",
+      "Producto": "Amarula raspberry",
+      "PrecioCaja": 1500,
+      "PrecioUnidad": 125,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971176,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "3Svoetdj0fi4II2QfbnD",
+      "Producto": "CAMPOS TINTO",
+      "PrecioCaja": 127,
+      "PrecioUnidad": 24,
+      "FechaEdicionTexto": "18/8/2026, 6:47:37 a.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "3ikMTBL3OZOrbBHnVNFv",
+      "Producto": "TORO BOTELLA",
+      "PrecioCaja": 120,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "21/9/2026, 4:22:36 p.m.",
+      "UltimaEdicion": 1790022156212,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "455fbDBLIntGyNDW6uLj",
+      "Producto": "PACEÑA GRANDE",
+      "PrecioCaja": 247,
+      "PrecioUnidad": 1,
+      "FechaEdicionTexto": "12/9/2026, 4:00:25 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "45ZyMXxo0wEnORDJFWBQ",
+      "Producto": "AMSTEL",
+      "PrecioCaja": 120,
+      "PrecioUnidad": 7,
+      "FechaEdicionTexto": "17/8/2026, 1:55:17 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "4SdEcudyLrlag6f6MKz9",
+      "Producto": "Casino Active G",
+      "PrecioCaja": 77,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "14/9/2026, 11:32:50 a.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "4WOhCD4M1poKLc9xXBN1",
+      "Producto": "QUILMEZ",
+      "PrecioCaja": 247,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "20/9/2026, 11:49:49 a.m.",
+      "UltimaEdicion": 1789919389846,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "4WjSGLnV0qa5THdrS67n",
+      "Producto": "SIDRA",
+      "PrecioCaja": 300,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "12/9/2026, 11:15:07 a.m.",
+      "UltimaEdicion": 1789226107860,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "4Yw6Y6sJJbk7P4qumRbn",
+      "Producto": "TANAT",
+      "PrecioCaja": 75,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "19/8/2026, 8:47:40 a.m.",
+      "UltimaEdicion": 63922740460.226,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "4b4pDqNUyXKCryiWOktW",
+      "Producto": "Granadita Chica",
+      "PrecioCaja": 43,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "16/9/2026, 5:34:48 p.m.",
+      "UltimaEdicion": 1789594488676,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "WmJdenZZFimkpYejs2iy",
+      "Producto": "Cuba 3L",
+      "PrecioCaja": 134,
+      "PrecioUnidad": 23,
+      "FechaEdicionTexto": "17/8/2026, 4:42:51 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "4jGzBoi9wM3TdFMOiBs3",
+      "Producto": "Soldadito 1°ra",
+      "PrecioCaja": 26,
+      "PrecioUnidad": 3,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "5O8XcrKLlO0fI4FH1EIN",
+      "Producto": "Bohem yogur",
+      "PrecioCaja": 130,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "5bJzNQXjT8OqtRdt5cUT",
+      "Producto": "SOLDADITO 2°DA",
+      "PrecioCaja": 16,
+      "PrecioUnidad": 2,
+      "FechaEdicionTexto": "18/8/2026, 6:44:21 a.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "6D6SMxINf0nK1G4EkHI6",
+      "Producto": "CAMEL AMARILLO G",
+      "PrecioCaja": 170,
+      "PrecioUnidad": 20,
+      "FechaEdicionTexto": "20/8/2026, 2:33:41 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "6ERrSQR4T0sEck1BENsJ",
+      "Producto": "Hill",
+      "PrecioCaja": 57,
+      "PrecioUnidad": 7,
+      "FechaEdicionTexto": "16/8/2026, 11:50:03 a.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "6K20HFERgkxDeKZizSdV",
+      "Producto": "ORIENTAL 3/4",
+      "PrecioCaja": 50,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "19/9/2026, 5:26:05 p. m.",
+      "UltimaEdicion": 1789853165378,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "6VmEw6ImjaYqQFEQaDc2",
+      "Producto": "BIFITER ROSADO",
+      "PrecioCaja": 240,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "17/9/2026, 6:07:57 p.m.",
+      "UltimaEdicion": 1789682877646,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "6bWT0soDnry5XCG0xhxY",
+      "Producto": "JHONNY ROJO",
+      "PrecioCaja": 1680,
+      "PrecioUnidad": 140,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971176,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "6qjMr7HsMz5VrlgshQ29",
+      "Producto": "Cuba Peque",
+      "PrecioCaja": 87,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "71zMZFRIB2I7XRAzCkF5",
+      "Producto": "BIFITER 3/4",
+      "PrecioCaja": 1860,
+      "PrecioUnidad": 160,
+      "FechaEdicionTexto": "1/10/2026, 5:50:39 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "7FrTMUTUs8Gr9U5VPlbo",
+      "Producto": "ALCOHOL MEDIA  PRIMERA",
+      "PrecioCaja": 50,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "25/9/2026, 10:36:49 a.m.",
+      "UltimaEdicion": 1790347009628,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "7GTldxsRlvnYQEnMvc8R",
+      "Producto": "Amarula",
+      "PrecioCaja": 1476,
+      "PrecioUnidad": 125,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "7IklvzrmuHRCjsZsWNM4",
+      "Producto": "BOHEM CHICLE",
+      "PrecioCaja": 115,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "16/8/2026, 10:47:44 a.m.",
+      "UltimaEdicion": 63922488464.16,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "7RnlQQ0QaejyXH0oV5Wl",
+      "Producto": "PEPSI 3LT",
+      "PrecioCaja": 83,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "15/9/2026, 5:48:19 p.m.",
+      "UltimaEdicion": 1789508899668,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "7RuFIrM3Qspvfm39rayQ",
+      "Producto": "SPRITE 3L",
+      "PrecioCaja": 108,
+      "PrecioUnidad": 20,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "7heck7V2Djr1OhrfIBVF",
+      "Producto": "HABANA RESERBA",
+      "PrecioCaja": 1200,
+      "PrecioUnidad": 100,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971176,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "7mC4s6HL4k3lJSU1ndry",
+      "Producto": "ANARETO",
+      "PrecioCaja": 50,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "14/9/2026, 8:10:27 p.m.",
+      "UltimaEdicion": 1789431027466,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "8kLvYhSGct57pfzqWxzx",
+      "Producto": "Fernet menta 3/4",
+      "PrecioCaja": 1056,
+      "PrecioUnidad": 88,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "8mambQ93nxa5szhsM2Pk",
+      "Producto": "Red bull",
+      "PrecioCaja": 370,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "8n45ImKhoXT4U0MwnCJq",
+      "Producto": "HABANA 7 AÑOS",
+      "PrecioCaja": 178,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 2:57:12 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "8rmi4UgfgLW2pM5Yq6Gt",
+      "Producto": "LM SANDIA",
+      "PrecioCaja": 128,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "14/9/2026, 11:33:02 a.m.",
+      "UltimaEdicion": 1789399982107,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "8u0K8yHm5qo2AH3Y9I0Z",
+      "Producto": "ROCKSTAR",
+      "PrecioCaja": 50,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "15/9/2026, 4:21:52 p.m.",
+      "UltimaEdicion": 1789503712526,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "9PFf484nkzxdqiM6agFi",
+      "Producto": "COCA COLA 3L",
+      "PrecioCaja": 108,
+      "PrecioUnidad": 20,
+      "FechaEdicionTexto": "18/8/2026, 7:54:03 p. m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "9PJSvnOdEbexIO7k7C7i",
+      "Producto": "Kolbert",
+      "PrecioCaja": 127,
+      "PrecioUnidad": 23,
+      "FechaEdicionTexto": "1/10/2026, 6:28:09 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "AoUarwByYL0hiMkTu6VQ",
+      "Producto": "Bohem sandia rojo",
+      "PrecioCaja": 130,
+      "PrecioUnidad": 17,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "AxQbuZGSnTTJ45IUzCus",
+      "Producto": "ONDA",
+      "PrecioCaja": 75,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "21/8/2026, 9:20:33 a.m.",
+      "UltimaEdicion": 63922915233.581,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "BFTNTR4RETU19th3Bfzh",
+      "Producto": "WINSTON GR",
+      "PrecioCaja": 110,
+      "PrecioUnidad": 13,
+      "FechaEdicionTexto": "18/8/2026, 9:56:04 a.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "BJEbpA7dsBRe5nuQxGkG",
+      "Producto": "CAMEL ACTIVE G",
+      "PrecioCaja": 188,
+      "PrecioUnidad": 20,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "BlvjWNlYlYUfaGXEbrpF",
+      "Producto": "CAMEL UVA G",
+      "PrecioCaja": 198,
+      "PrecioUnidad": 21,
+      "FechaEdicionTexto": "16/8/2026, 2:13:47 p. m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "BnKx0iSQFRQIL5bvTLKw",
+      "Producto": "Belho barreiro",
+      "PrecioCaja": 540,
+      "PrecioUnidad": 45,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971177,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "C3fjULyGfuuzSa7T3tsE",
+      "Producto": "SCHWEPPES",
+      "PrecioCaja": 45,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "24/9/2026, 11:11:29 a.m.",
+      "UltimaEdicion": 1790262689989,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "COz9z0Q5avyo1Vy60Ba6",
+      "Producto": "MENDOCINA 1L",
+      "PrecioCaja": 32,
+      "PrecioUnidad": 7,
+      "FechaEdicionTexto": "18/8/2026, 3:49:45 p. m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "CPBu2lBib6SDT4oCbl34",
+      "Producto": "CUBA LATS",
+      "PrecioCaja": 195,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "21/9/2026, 10:38:30 a.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "CWvisHFydpdGvK1A3mam",
+      "Producto": "Astoria",
+      "PrecioCaja": 62,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "14/9/2026, 11:34:01 a.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "ChHy3eX7WfoweJDZhRzK",
+      "Producto": "CHANSELLER",
+      "PrecioCaja": 600,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "14/9/2026, 9:08:10 a.m.",
+      "UltimaEdicion": 1789391290925,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "CvhXJAEOIKow6eOYe0mK",
+      "Producto": "10/20",
+      "PrecioCaja": 50,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "20/8/2026, 2:24:13 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "DYOMTT9uI8QpdW5S6ZGr",
+      "Producto": "Burguesa negra (30 latas)",
+      "PrecioCaja": 185,
+      "PrecioUnidad": 8,
+      "FechaEdicionTexto": "26/9/2026, 4:50:21 p.m.",
+      "UltimaEdicion": 1790455821711,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "EFcPAklzQtFEfZ7FUCUC",
+      "Producto": "Agua 2L",
+      "PrecioCaja": 40,
+      "PrecioUnidad": 8,
+      "FechaEdicionTexto": "16/8/2026, 10:28:18 a.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "EJZ9iipb1xZT1lmZc4tP",
+      "Producto": "FANTA PEQUE",
+      "PrecioCaja": 39,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "EUsBVj0SUfuTmp7WiFOF",
+      "Producto": "Bohem negro tundra",
+      "PrecioCaja": 130,
+      "PrecioUnidad": 17,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "EhB2LjFFUKm0KZftDRE4",
+      "Producto": "LM Active Chico",
+      "PrecioCaja": 92,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "1/10/2026, 8:57:35 a.m.",
+      "UltimaEdicion": 1790859455853,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "FMTmA2dtJ2bTIBFWeZbZ",
+      "Producto": "GOLD",
+      "PrecioCaja": 55,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "15/9/2026, 5:39:18 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "FYI0QID5NVcxKN9zRiVB",
+      "Producto": "OLD TRADE",
+      "PrecioCaja": 65,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "20/9/2026, 11:46:16 a.m.",
+      "UltimaEdicion": 1789919176987,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "FZMBJrueYINng1SYGLM4",
+      "Producto": "HABANA ORIGINAL",
+      "PrecioCaja": 1200,
+      "PrecioUnidad": 100,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971177,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "GJ6gDZWBOc537Sp8neFB",
+      "Producto": "Alcohol picaflor 1/2",
+      "PrecioCaja": 78,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "16/9/2026, 5:27:12 p.m.",
+      "UltimaEdicion": 1789594032308,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "HZD6AvklAV3E49lNwR1I",
+      "Producto": "DOBLE BLACK",
+      "PrecioCaja": 420,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "19/9/2026, 2:02:51 p.m.",
+      "UltimaEdicion": 1789840971203,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "HuF9HAyai5vRlr4jOcKS",
+      "Producto": "SANTE CH",
+      "PrecioCaja": 70,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "16/8/2026, 11:28:15 a.m.",
+      "UltimaEdicion": 63922490894.855,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "I7bAqKMiuZjy0g4If6RL",
+      "Producto": "CANELADO G",
+      "PrecioCaja": 30,
+      "PrecioUnidad": 7,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971177,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "IBCBBeyMwGGZUzUdG0Mx",
+      "Producto": "CABAÑA",
+      "PrecioCaja": 75,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "20/8/2026, 2:57:32 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "IOf4pihq4jqtRExZ5fr9",
+      "Producto": "PURA VIDA DE 3",
+      "PrecioCaja": 105,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "28/9/2026, 1:35:26 p.m.",
+      "UltimaEdicion": 1790616926226,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "JWiX1cZD7kaEukhQ6AuA",
+      "Producto": "GRAN VASO",
+      "PrecioCaja": 1435,
+      "PrecioUnidad": 130,
+      "FechaEdicionTexto": "20/8/2026, 4:26:42 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "Jf1gp5pOAgJWbLOVYL5m",
+      "Producto": "Kolbert tinto",
+      "PrecioCaja": 127,
+      "PrecioUnidad": 25,
+      "FechaEdicionTexto": "26/9/2026, 4:26:07 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "JjIEeYYX6MZuPQjUACCU",
+      "Producto": "SANTE G",
+      "PrecioCaja": 60,
+      "PrecioUnidad": 12,
+      "FechaEdicionTexto": "16/8/2026, 11:28:25 a.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "KFnU1Dfy488xDs3VFr58",
+      "Producto": "Gin Beefeater",
+      "PrecioCaja": 2800,
+      "PrecioUnidad": 220,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971177,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "KGnZtj5nqA3xMFRru9gB",
+      "Producto": "FLOR PATA",
+      "PrecioCaja": 136,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "KS9LuVuUvg1wduQ6pMGY",
+      "Producto": "PACEÑA MACANUDA",
+      "PrecioCaja": 167,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "18/9/2026, 9:32:30 a.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "KVAKlXKfse9UmoDyol1s",
+      "Producto": "TRES ESTRELLAS ROJO",
+      "PrecioCaja": 143,
+      "PrecioUnidad": 27,
+      "FechaEdicionTexto": "18/8/2026, 6:44:00 a.m.",
+      "UltimaEdicion": 63922646642.488,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "KXKWit4ufO9o44x4sgwG",
+      "Producto": "CAMPOS OPORTO",
+      "PrecioCaja": 140,
+      "PrecioUnidad": 30,
+      "FechaEdicionTexto": "18/8/2026, 6:47:13 a.m.",
+      "UltimaEdicion": 63922646833.732,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "Kag8bKZxVWKEvxZZjRpf",
+      "Producto": "GRANADINA",
+      "PrecioCaja": 540,
+      "PrecioUnidad": 45,
+      "FechaEdicionTexto": "16/8/2026, 11:50:42 a.m.",
+      "UltimaEdicion": 63922492241.675,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "KpRUlzcj23O34SXKb6C2",
+      "Producto": "ALOE ORIGINAL",
+      "PrecioCaja": 235,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "16/8/2026, 11:26:24 a.m.",
+      "UltimaEdicion": 63922490784.085,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "L02BezCFLyg0oi7ejgsu",
+      "Producto": "CUBA LATA",
+      "PrecioCaja": 195,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "26/9/2026, 9:26:19 a.m.",
+      "UltimaEdicion": 1790429179918,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "LIp0GUAqidKbKWmWlvo6",
+      "Producto": "BUHERO",
+      "PrecioCaja": 438,
+      "PrecioUnidad": 75,
+      "FechaEdicionTexto": "17/8/2026, 5:33:24 p.m.",
+      "UltimaEdicion": 63922599206.48,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "LqCfTYAt11OValoS3Q7E",
+      "Producto": "COÑAC CH",
+      "PrecioCaja": 104,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "17/8/2026, 12:09:29 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "M05hUqS7IdRpVoPLEH1v",
+      "Producto": "CAMEL CELESTE GR",
+      "PrecioCaja": 170,
+      "PrecioUnidad": 10,
+      "FechaEdicionTexto": "20/8/2026, 2:33:19 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "M2xLlda1JHV92NXMrX0K",
+      "Producto": "CANELADO CH",
+      "PrecioCaja": 30,
+      "PrecioUnidad": 5,
+      "FechaEdicionTexto": "17/8/2026, 12:09:42 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "MC8qA7SnvTIPi7K9AcbL",
+      "Producto": "PURA VIDA 2L",
+      "PrecioCaja": 75,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "24/9/2026, 11:13:24 a.m.",
+      "UltimaEdicion": 1790262804027,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "MNZ7G4MYYoqnAklHquFG",
+      "Producto": "BOHEM MANGO",
+      "PrecioCaja": 130,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971177,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "MdJZIrxrKl4t5Xq5NzBV",
+      "Producto": "VODKA",
+      "PrecioCaja": 105,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "28/9/2026, 12:34:33 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "My0WBr9lA2yi3bUqvizi",
+      "Producto": "FLOW ACHACHAIRU BOTELLIN",
+      "PrecioCaja": 185,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "15/8/2026, 8:27:05 a.m.",
+      "UltimaEdicion": 63922393625.836,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "N3761tlTgMpVTuC3QM4J",
+      "Producto": "HUARI MIEL BOTELLIN",
+      "PrecioCaja": 310,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "16/9/2026, 3:36:38 p.m.",
+      "UltimaEdicion": 1789587398164,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "N5pQTV5Y7o1zRkxRVbce",
+      "Producto": "JABA 1RA ALCOHOL",
+      "PrecioCaja": 515,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "18/8/2026, 3:48:26 p.m.",
+      "UltimaEdicion": 63922679305.894,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "N9T7ti0D0aawjbtFSEWM",
+      "Producto": "ENCENDEDOR",
+      "PrecioCaja": 40,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "16/8/2026, 10:46:39 a.m.",
+      "UltimaEdicion": 63922488399.578,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "NQ1wkaI2EzRzDLENOKcP",
+      "Producto": "JABA HIL",
+      "PrecioCaja": 2700,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "18/9/2026, 9:29:25 a.m.",
+      "UltimaEdicion": 1789738165680,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "NTOeQ8TRLeIX4kApgwKS",
+      "Producto": "AGUA PERSONAL",
+      "PrecioCaja": 45,
+      "PrecioUnidad": 5,
+      "FechaEdicionTexto": "18/8/2026, 11:08:12 p.m.",
+      "UltimaEdicion": 63922705694.643,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "O8SpNybhmgzjnhaILf6M",
+      "Producto": "ANTARTICA 3 LITRO",
+      "PrecioCaja": 100,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "26/9/2026, 4:58:54 p.m.",
+      "UltimaEdicion": 1790456334887,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "OALxnZJtrZGlUYaO9ZVY",
+      "Producto": "SKY 3/4",
+      "PrecioCaja": 0,
+      "PrecioUnidad": 70,
+      "FechaEdicionTexto": "15/8/2026, 8:18:26 a.m.",
+      "UltimaEdicion": 63922393108.772,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "OFi2yA9NBKTpASakkokH",
+      "Producto": "GOLDEN PALITO",
+      "PrecioCaja": 120,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "11/9/2026, 9:45:49 a.m.",
+      "UltimaEdicion": 1789134349289,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "OgKLiZdvDTyMn2G1zWAh",
+      "Producto": "COÑAC 1L",
+      "PrecioCaja": 235,
+      "PrecioUnidad": 40,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "OkuDgo307lZlt01jaWW2",
+      "Producto": "DERBY TRANSICION",
+      "PrecioCaja": 105,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "20/8/2026, 9:36:59 a.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "OphAndUj6UUwrFwG9lbv",
+      "Producto": "COCA COLA 2L",
+      "PrecioCaja": 74,
+      "PrecioUnidad": 14,
+      "FechaEdicionTexto": "17/8/2026, 3:02:28 p. m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "Ozk23QMa4mOHFdVMyI1E",
+      "Producto": "PACEÑA PALITO",
+      "PrecioCaja": 161,
+      "PrecioUnidad": 5,
+      "FechaEdicionTexto": "29/9/2026, 3:23:02 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "PPLWFz0zlMznCb5lQzLm",
+      "Producto": "NATASHA",
+      "PrecioCaja": 75,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "29/9/2026, 11:02:42 a.m.",
+      "UltimaEdicion": 1790694162922,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "PUkKjpbICUAUPEUGhXlB",
+      "Producto": "Camel Uva Chico",
+      "PrecioCaja": 204,
+      "PrecioUnidad": 11,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "zqHLOZmd2kN9iewsScWV",
+      "Producto": "SPRITE 2L",
+      "PrecioCaja": 74,
+      "PrecioUnidad": 14,
+      "FechaEdicionTexto": "2/10/2026, 18:04:57",
+      "UltimaEdicion": 1790978484530,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "QZa2VVPzpOJI06AjjxOE",
+      "Producto": "ADES 1L",
+      "PrecioCaja": 65,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "18/8/2026, 7:02:19 p.m.",
+      "UltimaEdicion": 63922690939.6,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "QhqkK6fPnnPr1QxgB8di",
+      "Producto": "Pecho 1/4",
+      "PrecioCaja": 80,
+      "PrecioUnidad": 5,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "QrQ31gKfqkr7U1IVeggr",
+      "Producto": "Mentolado chico",
+      "PrecioCaja": 30,
+      "PrecioUnidad": 5,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "QwtzmDM2qs5cRaPC2jYq",
+      "Producto": "SPRAY PERSONAL",
+      "PrecioCaja": 54,
+      "PrecioUnidad": 6,
+      "FechaEdicionTexto": "29/9/2026, 6:28:50 p.m.",
+      "UltimaEdicion": 1790720931026,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "QwwfKb0AU7Oe3BJ7DzTf",
+      "Producto": "COCACOLA LATA",
+      "PrecioCaja": 134,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "18/9/2026, 11:51:51 a.m.",
+      "UltimaEdicion": 1789746711602,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "R7LKUIELQy9UPR2wV0T3",
+      "Producto": "MOEMA",
+      "PrecioCaja": 170,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "16/9/2026, 11:56:19 a.m.",
+      "UltimaEdicion": 1789574179382,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "RDVLnZrzNvYLwma1y2kW",
+      "Producto": "Bacardi carta blanca",
+      "PrecioCaja": 1320,
+      "PrecioUnidad": 110,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971177,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "RJRDqThe2fQjBwke78Fo",
+      "Producto": "PEPSI 1L",
+      "PrecioCaja": 73,
+      "PrecioUnidad": 7,
+      "FechaEdicionTexto": "12/9/2026, 3:59:14 p.m.",
+      "UltimaEdicion": 1789243154981,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "RRwL12u6G2bKLppHeV7Y",
+      "Producto": "ICE 51",
+      "PrecioCaja": 295,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "17/8/2026, 8:32:31 a.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "RZT90JYDoKKVAFk77g1r",
+      "Producto": "FOURLOKO GRANDE",
+      "PrecioCaja": 390,
+      "PrecioUnidad": 40,
+      "FechaEdicionTexto": "28/9/2026, 3:52:17 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "T1HrcfHVeNl74aszTU7d",
+      "Producto": "FRIZE BOTELLA",
+      "PrecioCaja": 135,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "23/9/2026, 11:38:46 a.m.",
+      "UltimaEdicion": 1790177926221,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "UD7YhkhRIQDVvtCs8k8E",
+      "Producto": "BOHEM MARULA",
+      "PrecioCaja": 120,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "20/8/2026, 3:57:45 p.m.",
+      "UltimaEdicion": 63922852665.441,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "UPCjq1SDQybSjHS9Hf17",
+      "Producto": "JARANA CON VASO",
+      "PrecioCaja": 140,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971177,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "UeAYq9uGwwvdJceQGPjd",
+      "Producto": "ABUELO LITRO",
+      "PrecioCaja": 1140,
+      "PrecioUnidad": 95,
+      "FechaEdicionTexto": "29/9/2026, 3:27:47 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "Ung3go6L87xYRHsyxHD1",
+      "Producto": "PEQUE CANASTILLO",
+      "PrecioCaja": 110,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "22/9/2026, 3:35:49 p. m.",
+      "UltimaEdicion": 1790105749184,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "VBBoFRQ8sgeyh1WMgFQv",
+      "Producto": "BALLANTINES",
+      "PrecioCaja": 150,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "19/9/2026, 4:06:41 p.m.",
+      "UltimaEdicion": 1789848402015,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "VH0EtBi05YEKlWYD88BM",
+      "Producto": "WINSTON CH",
+      "PrecioCaja": 114,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "15/9/2026, 2:58:40 p.m.",
+      "UltimaEdicion": 1789498720305,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "WGiXZqld1Qsd6Fb7MaaW",
+      "Producto": "Ron kayana",
+      "PrecioCaja": 696,
+      "PrecioUnidad": 58,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971177,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "WdRXOUmIMyxXWLArdOZX",
+      "Producto": "Coca Cola 1L",
+      "PrecioCaja": 100,
+      "PrecioUnidad": 200,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971177,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "WgNmqmRdWYJWoCAEes8i",
+      "Producto": "Chanceler",
+      "PrecioCaja": 540,
+      "PrecioUnidad": 50,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "WkyvbkmBQbWcjXLlqj3S",
+      "Producto": "Flor 1L",
+      "PrecioCaja": 888,
+      "PrecioUnidad": 74,
+      "FechaEdicionTexto": "16/9/2026, 6:45:07 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "Wq3JqfjsewMzmLg1Kqhc",
+      "Producto": "JOSE CUERVO",
+      "PrecioCaja": 1584,
+      "PrecioUnidad": 133,
+      "FechaEdicionTexto": "14/9/2026, 3:06:44 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "X9fZyQtcF2zQaE85PVvs",
+      "Producto": "ACUARIO 2L",
+      "PrecioCaja": 72,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "14/9/2026, 11:07:13 a.m.",
+      "UltimaEdicion": 1789398433077,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "Xvd4h4vI7tDxUAihvbad",
+      "Producto": "Conti Palito",
+      "PrecioCaja": 143,
+      "PrecioUnidad": 7,
+      "FechaEdicionTexto": "29/9/2026, 3:20:30 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "YPthKpStjJ5VxIPiBcOf",
+      "Producto": "37 LEGUAS",
+      "PrecioCaja": 65,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "26/10/2026, 13:58:33",
+      "UltimaEdicion": 1791130849748,
+      "actualizadoPor": "DispositivoCliente"
+    },
+    {
+      "idDoc": "YUQp9frGdRBgGWRc4f8x",
+      "Producto": "SPRITE PEQUE",
+      "PrecioCaja": 40,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "22/9/2026, 2:45:18 p.m.",
+      "UltimaEdicion": 1790102718952,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "YeQrFyIKcu61ups9TAeL",
+      "Producto": "WW CH",
+      "PrecioCaja": 270,
+      "PrecioUnidad": 12,
+      "FechaEdicionTexto": "2/10/2026, 8:47:22 a.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "YyKfAStc1evSrE8CbVu3",
+      "Producto": "FANTA 3L",
+      "PrecioCaja": 107,
+      "PrecioUnidad": 20,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971177,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "YzomIICYhS69QzrIEOwU",
+      "Producto": "LM active grande",
+      "PrecioCaja": 166,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "12/9/2026, 4:00:10 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "Z9toLq31u0HZ5N2a5lfI",
+      "Producto": "Monster",
+      "PrecioCaja": 400,
+      "PrecioUnidad": 25,
+      "FechaEdicionTexto": "16/9/2026, 5:29:39 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "ZRaA8UWQc8R58IXlAeqM",
+      "Producto": "DERBY ANTIGUO",
+      "PrecioCaja": 107,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "18/8/2026, 9:55:06 a.m.",
+      "UltimaEdicion": 63922658106.357,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "ZUtgudUXYPNrirWDrj5N",
+      "Producto": "Power Personal",
+      "PrecioCaja": 60,
+      "PrecioUnidad": 10,
+      "FechaEdicionTexto": "23/9/2026, 1:23:07 p.m.",
+      "UltimaEdicion": 1790184187773,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "Ze3sHJHdgMhRVcYrH4SG",
+      "Producto": "Terruño blanco",
+      "PrecioCaja": 127,
+      "PrecioUnidad": 25,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "Zem3E6Zfdg1fy2gcd0Qh",
+      "Producto": "Theros Gin Grande",
+      "PrecioCaja": 750,
+      "PrecioUnidad": 125,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971177,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "ZgnDyltN9Q6O6pndO39r",
+      "Producto": "VIÑA BALBO",
+      "PrecioCaja": 117,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "20/9/2026, 11:12:54 a. m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "a9yPmy5YrPqqv7URIBtQ",
+      "Producto": "Seco litro",
+      "PrecioCaja": 235,
+      "PrecioUnidad": 39,
+      "FechaEdicionTexto": "16/9/2026, 6:46:50 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "aKd1kImbT8JpA7w8LCkD",
+      "Producto": "JARANA",
+      "PrecioCaja": 1560,
+      "PrecioUnidad": 130,
+      "FechaEdicionTexto": "16/8/2026, 11:41:01 a.m.",
+      "UltimaEdicion": 63922491661.904,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "aXQkmDfgA24exsJfU7pu",
+      "Producto": "Bacardi basberri",
+      "PrecioCaja": 1320,
+      "PrecioUnidad": 110,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971177,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "agHaa4Q64kt4gvMPq2dv",
+      "Producto": "Granadita mediana",
+      "PrecioCaja": 73,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971177,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "amGhNiZhf9KeluXPaS2h",
+      "Producto": "FANTA 2L",
+      "PrecioCaja": 74,
+      "PrecioUnidad": 14,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971177,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "awD5P0LsYwSvBdBKeHtt",
+      "Producto": "Agua 2L gas",
+      "PrecioCaja": 40,
+      "PrecioUnidad": 8,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971177,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "bN1BuBWvHoeXZu2HYUSK",
+      "Producto": "SAMBA",
+      "PrecioCaja": 100,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "16/9/2026, 10:22:32 a.m.",
+      "UltimaEdicion": 1789568552529,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "bRg05LqxLD7GdKvYqqB8",
+      "Producto": "Power 1L",
+      "PrecioCaja": 57,
+      "PrecioUnidad": 10,
+      "FechaEdicionTexto": "11/9/2026, 9:44:58 a.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "bSC5wx103cJ1WMOKm87W",
+      "Producto": "Bacardi mojito",
+      "PrecioCaja": 1320,
+      "PrecioUnidad": 110,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971177,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "c7oc2YSWVqqyDs8T89pt",
+      "Producto": "MENTA",
+      "PrecioCaja": 104,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "20/8/2026, 4:33:09 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "cEj1zRwvKjKIFl4tYWrK",
+      "Producto": "GRAN SIN VASO",
+      "PrecioCaja": 1315,
+      "PrecioUnidad": 110,
+      "FechaEdicionTexto": "20/8/2026, 4:27:57 p.m.",
+      "UltimaEdicion": 63922854477.142,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "dRpI9nG7NLe2ysuR3rzb",
+      "Producto": "Maltin",
+      "PrecioCaja": 190,
+      "PrecioUnidad": 10,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971177,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "dcvtKhDosyy0MVOdUgmB",
+      "Producto": "TERRUNIO",
+      "PrecioCaja": 125,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "1/10/2026, 6:27:50 p.m.",
+      "UltimaEdicion": 1790893670062,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "ddS5cmCy80n0qokdv2dU",
+      "Producto": "CAMEL ACTIVA CH",
+      "PrecioCaja": 196,
+      "PrecioUnidad": 10,
+      "FechaEdicionTexto": "16/8/2026, 11:46:24 a.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "e6uLpNnSFahfhW6Pk9r4",
+      "Producto": "VICTORIA",
+      "PrecioCaja": 57,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "22/9/2026, 12:39:41 p.m.",
+      "UltimaEdicion": 1790095181068,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "eFfkOpOmfS9bS8viAtZR",
+      "Producto": "FLOW AZUL BOTELLIN",
+      "PrecioCaja": 163,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "15/8/2026, 8:26:35 a.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "fKMOccVHcXKV2rRl4gd5",
+      "Producto": "TERRUÑO OPORTO",
+      "PrecioCaja": 145,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "19/9/2026, 5:08:09 p.m.",
+      "UltimaEdicion": 1789852089161,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "fMuVqvsrIUdMNty0xH9I",
+      "Producto": "OLD RED BOTELLA",
+      "PrecioCaja": 58,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "23/9/2026, 4:58:24 p.m.",
+      "UltimaEdicion": 1790197104676,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "fZheQbfa5bNGLA7DgZj9",
+      "Producto": "Fernet buhero",
+      "PrecioCaja": 450,
+      "PrecioUnidad": 75,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971177,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "gkuWZelts4PihNKAn1Cr",
+      "Producto": "TAMPICO 3",
+      "PrecioCaja": 65,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "23/9/2026, 4:13:37 p.m.",
+      "UltimaEdicion": 1790194418029,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "gqNx4q9mOFymtUv5cYkh",
+      "Producto": "CASA REAL AZUL",
+      "PrecioCaja": 198,
+      "PrecioUnidad": 35,
+      "FechaEdicionTexto": "26/9/2026, 6:09:48 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "hPTVx2boZFWHICIk2XlM",
+      "Producto": "Lm chico",
+      "PrecioCaja": 68,
+      "PrecioUnidad": 8,
+      "FechaEdicionTexto": "12/9/2026, 7:07:26 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "iHvvTV0KArzoZKCTHxdZ",
+      "Producto": "PECHO SOLDADITO",
+      "PrecioCaja": 24,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "29/9/2026, 6:29:34 p.m.",
+      "UltimaEdicion": 1790720975071,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "iNDFcCVE2SulLjwVx10N",
+      "Producto": "CAMEL AMARILLO CH",
+      "PrecioCaja": 178,
+      "PrecioUnidad": 10,
+      "FechaEdicionTexto": "20/8/2026, 2:34:45 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "iYWQSb9dTk2Xbqb0VSHA",
+      "Producto": "Huari palito",
+      "PrecioCaja": 195,
+      "PrecioUnidad": 15,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971178,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "iqbWn3qxIj8Ckj8lAJ8U",
+      "Producto": "REBEL RON",
+      "PrecioCaja": 45,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "14/9/2026, 8:14:55 p.m.",
+      "UltimaEdicion": 1789431295856,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "iwhSi8HTceMLLl1eTW0R",
+      "Producto": "ALTOSAMA ROSSE",
+      "PrecioCaja": 65,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "24/9/2026, 2:19:49 p.m.",
+      "UltimaEdicion": 1790273989938,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "izE0FrsbpAwKIzrCBBN3",
+      "Producto": "TERRUÑO",
+      "PrecioCaja": 125,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "1/10/2026, 6:27:56 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "j541qmyDQzLRtNidr3Im",
+      "Producto": "FLOR LITEO 5 AÑOS",
+      "PrecioCaja": 88,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "23/9/2026, 4:14:39 p.m.",
+      "UltimaEdicion": 1790194480003,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "kCx9tAudRjpRhOoHIUg3",
+      "Producto": "Ducal palito",
+      "PrecioCaja": 128,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "kM34UR0z9A2rYU6eolz9",
+      "Producto": "SEVEN",
+      "PrecioCaja": 74,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "13/9/2026, 11:22:35 a.m.",
+      "UltimaEdicion": 1789312955299,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "kOADtPdS34U4PLXZvYA5",
+      "Producto": "CICLON SIRIUS",
+      "PrecioCaja": 53,
+      "PrecioUnidad": 6,
+      "FechaEdicionTexto": "11/9/2026, 10:02:50 a.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "kc2ugtS9DmvobdRMRMUW",
+      "Producto": "CASINO ACTIVE CH",
+      "PrecioCaja": 45,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "16/8/2026, 11:48:36 a.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "lEWMB0taGNGcJo0BKytj",
+      "Producto": "HILL SABOR",
+      "PrecioCaja": 57,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "16/8/2026, 11:49:53 a.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "lpHRdbSKhjdbbC0xnd2k",
+      "Producto": "ACUARIO MEDIA 1/2",
+      "PrecioCaja": 54,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "25/9/2026, 10:53:15 a.m.",
+      "UltimaEdicion": 1790347995204,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "m9OfSvpuTO122JKn7Nim",
+      "Producto": "Coca Cola Peque",
+      "PrecioCaja": 40,
+      "PrecioUnidad": 4,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "mCMZLoRVguWQ88TqnVcw",
+      "Producto": "PEPSI CHIQUI",
+      "PrecioCaja": 29,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "21/8/2026, 9:54:51 a.m.",
+      "UltimaEdicion": 63922917291.207,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "mcZxHhHyiZ8mP6rP64pU",
+      "Producto": "TRES ESTRELLAS NEGRO CHICO",
+      "PrecioCaja": 120,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "17/8/2026, 4:46:09 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "nXbZ9JW3gVjmHwpeiqxh",
+      "Producto": "Bacardi solera",
+      "PrecioCaja": 7620,
+      "PrecioUnidad": 135,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971178,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "nfZ0nhwYsPDi7XIxAPkM",
+      "Producto": "BOHEM SANDIA NEGRO",
+      "PrecioCaja": 135,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "17/8/2026, 4:51:53 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "ng6PR3ozYC3OwknMjdyn",
+      "Producto": "OKD RED BOTELLA",
+      "PrecioCaja": 58,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "23/9/2026, 4:57:16 p.m.",
+      "UltimaEdicion": 1790197036032,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "oU6DAousmXAQOP9cShb4",
+      "Producto": "PACEÑA NORMAL",
+      "PrecioCaja": 200,
+      "PrecioUnidad": 10,
+      "FechaEdicionTexto": "15/8/2026, 2:30:24 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "ox9JylRrop8Z1fER57ws",
+      "Producto": "BOHEM MOJITO",
+      "PrecioCaja": 130,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971178,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "pM982OvVWmHk8Wvwix7P",
+      "Producto": "Toro viejo carton",
+      "PrecioCaja": 220,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "pfD8Owku1kTuSsnKECKV",
+      "Producto": "LM azul G",
+      "PrecioCaja": 125,
+      "PrecioUnidad": 13,
+      "FechaEdicionTexto": "12/9/2026, 7:07:11 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "pv7NxMXsLLj2xgvS8jbv",
+      "Producto": "WW GR",
+      "PrecioCaja": 430,
+      "PrecioUnidad": 37,
+      "FechaEdicionTexto": "16/9/2026, 5:32:14 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "q60TWCcaFY7xF9GQNUpx",
+      "Producto": "Malta",
+      "PrecioCaja": 135,
+      "PrecioUnidad": 7,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "qNbFsvmg1fgzGCvIKsKB",
+      "Producto": "Camel Sandia G",
+      "PrecioCaja": 198,
+      "PrecioUnidad": 22,
+      "FechaEdicionTexto": "12/9/2026, 12:07:00 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "qcNTCKXY5WOhhgmPH9pH",
+      "Producto": "HUARI CANASTILLO",
+      "PrecioCaja": 200,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "24/9/2026, 12:04:27 p.m.",
+      "UltimaEdicion": 1790265867059,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "qftdxTytbReUh7oAZNdA",
+      "Producto": "CAMEL CELESTE CHI",
+      "PrecioCaja": 178,
+      "PrecioUnidad": 10,
+      "FechaEdicionTexto": "20/8/2026, 2:34:05 p.m.",
+      "UltimaEdicion": 63922847645.26,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "qyaO1F0Jyexp47tPRW8V",
+      "Producto": "LM Rojo grande",
+      "PrecioCaja": 125,
+      "PrecioUnidad": 13,
+      "FechaEdicionTexto": "12/9/2026, 7:07:52 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "rG4OuoV74ycR73F4v2lu",
+      "Producto": "Bohem kukuberry",
+      "PrecioCaja": 130,
+      "PrecioUnidad": 17,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971178,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "rM23Y0mjaRGQMeB3gPlD",
+      "Producto": "campos blanco",
+      "PrecioCaja": 117,
+      "PrecioUnidad": 25,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971178,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "rNYlWfqeQspR6OmtStIc",
+      "Producto": "DUO",
+      "PrecioCaja": 210,
+      "PrecioUnidad": 35,
+      "FechaEdicionTexto": "19/9/2026, 5:09:19 p.m.",
+      "UltimaEdicion": 1789852159327,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "rUS4DQ14q90VITFwqiJJ",
+      "Producto": "Tres Estrellas Negro",
+      "PrecioCaja": 153,
+      "PrecioUnidad": 28,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971178,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "rWhHKdFWnVXlzd93KHwU",
+      "Producto": "JARANA COPAS",
+      "PrecioCaja": 160,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "15/9/2026, 4:42:15 p.m.",
+      "UltimaEdicion": 1789504935986,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "rcvVQwRTElccsWMvSBND",
+      "Producto": "Cuba 1/2",
+      "PrecioCaja": 87,
+      "PrecioUnidad": 10,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "rrEglFrnwzquBfmtSKHY",
+      "Producto": "Alcohol 3/4",
+      "PrecioCaja": 80,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971178,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "rvM6J1UTnZMUuXXTCHKz",
+      "Producto": "Huari lata palito",
+      "PrecioCaja": 196,
+      "PrecioUnidad": 10,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "s2aCplIt4RgD71wGsPcO",
+      "Producto": "Fernet 3/4",
+      "PrecioCaja": 1080,
+      "PrecioUnidad": 90,
+      "FechaEdicionTexto": "17/9/2026, 2:15:31 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "sJIInYz4pYh14x8uTeus",
+      "Producto": "COCA COLA 2 1/2 RET",
+      "PrecioCaja": 85,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "13/9/2026, 9:19:42 a.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "sRN3FdvU3zQpBE84z5qN",
+      "Producto": "Granadita gr",
+      "PrecioCaja": 73,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "sRi4YNMiuNUn0JjrDxao",
+      "Producto": "MARBORO ROJO BLANCO",
+      "PrecioCaja": 188,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "14/9/2026, 11:31:44 a.m.",
+      "UltimaEdicion": 1789399904174,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "sZq8xcJV2pqwY61hlBmD",
+      "Producto": "Mentolado G",
+      "PrecioCaja": 30,
+      "PrecioUnidad": 7,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971178,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "t1kU5dqrW7pCEavkknDc",
+      "Producto": "CAFE IDEAL",
+      "PrecioCaja": 85,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "13/9/2026, 10:16:04 a.m.",
+      "UltimaEdicion": 1789308964712,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "tSHFnlhUiwiGwJVncSvu",
+      "Producto": "BIFITER  LIYRO",
+      "PrecioCaja": 270,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "17/9/2026, 2:53:34 p.m.",
+      "UltimaEdicion": 1789671214777,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "tZkGF9S3odSytiyNA1g4",
+      "Producto": "CAMBA CH",
+      "PrecioCaja": 31,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "14/9/2026, 2:34:47 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "ttOa7WzPv1UoLJbNvNWY",
+      "Producto": "CAMBA GRANDE",
+      "PrecioCaja": 66,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "14/9/2026, 2:34:29 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "v2ZzTLb21rYDKspS4ihX",
+      "Producto": "Fernet 1L",
+      "PrecioCaja": 702,
+      "PrecioUnidad": 113,
+      "FechaEdicionTexto": "23/9/2026, 3:48:09 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "v6cd1TNWzGdD031iknaZ",
+      "Producto": "RUSH",
+      "PrecioCaja": 240,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "15/9/2026, 5:42:06 p.m.",
+      "UltimaEdicion": 1789508526824,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "vFPUOuzr4xwYeWgDIE8O",
+      "Producto": "TRES ESTRELLAS ROJO CHICO",
+      "PrecioCaja": 115,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "29/9/2026, 11:04:58 a.m.",
+      "UltimaEdicion": 1790694298898,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "vMc3ygOA8id3ZjIy9hpF",
+      "Producto": "Black 1/2",
+      "PrecioCaja": 76,
+      "PrecioUnidad": 8,
+      "FechaEdicionTexto": "10/9/2026, 6:51:30 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "vMsqnvuMo1QBbgMGcVDx",
+      "Producto": "Urbano",
+      "PrecioCaja": 107,
+      "PrecioUnidad": 20,
+      "FechaEdicionTexto": "11/9/2026, 4:49:12 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "vgsOdXsjFmYaAazk9QSK",
+      "Producto": "Cuba 2L",
+      "PrecioCaja": 134,
+      "PrecioUnidad": 30,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "wJig1CGYasBtoNWNh8hK",
+      "Producto": "ABUELO PATA",
+      "PrecioCaja": 1170,
+      "PrecioUnidad": 195,
+      "FechaEdicionTexto": "29/9/2026, 3:27:30 p.m.",
+      "UltimaEdicion": 1790710050313,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "wMqlrzALog9DV0oYQPHO",
+      "Producto": "Conti Latona",
+      "PrecioCaja": 218,
+      "PrecioUnidad": 11,
+      "FechaEdicionTexto": "1/10/2026, 12:02:23 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "wTTXn4ouwJ8jcdHJpejg",
+      "Producto": "LM VERDE",
+      "PrecioCaja": 125,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "12/9/2026, 7:08:01 p.m.",
+      "UltimaEdicion": 1789254481876,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "wUGZvorJbarS1SJJvABN",
+      "Producto": "Agua 1/2L gas",
+      "PrecioCaja": 45,
+      "PrecioUnidad": 5,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "wcqHEcmuzTpvbNlQmk2Y",
+      "Producto": "ALOE NACIONAL",
+      "PrecioCaja": 98,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "22/9/2026, 7:21:43 p. m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "wmTHW3qZQwk4vjlBbbhv",
+      "Producto": "MARBORO NUEVO",
+      "PrecioCaja": 90,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "18/9/2026, 9:21:19 a.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "x31Cp8EA8eCwKvN65eXs",
+      "Producto": "Black",
+      "PrecioCaja": 152,
+      "PrecioUnidad": 8,
+      "FechaEdicionTexto": "10/9/2026, 6:51:19 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "x3mOuEMkPq6ysXtVH9PI",
+      "Producto": "FOUR LOKO CHIC",
+      "PrecioCaja": 280,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "14/9/2026, 6:42:04 p.m.",
+      "UltimaEdicion": 1789425724353,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "xFMuxaFRpPDirFLaE30Z",
+      "Producto": "Corona",
+      "PrecioCaja": 270,
+      "PrecioUnidad": 15,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971178,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "xW20gy49PBlJm0jo0F8R",
+      "Producto": "Casino chico",
+      "PrecioCaja": 43,
+      "PrecioUnidad": 5,
+      "FechaEdicionTexto": "14/9/2026, 11:32:18 a.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "xc3d3omDzdxWRRnS1IvE",
+      "Producto": "Bohem uva",
+      "PrecioCaja": 130,
+      "PrecioUnidad": 17,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "xerER0ysCCHzfyWIcu9G",
+      "Producto": "FANTA DE 1/2",
+      "PrecioCaja": 54,
+      "PrecioUnidad": 6,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971178,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "xgsTaF0ywhQUj3tSyy9G",
+      "Producto": "ALTOSAMA EXTRABRUT",
+      "PrecioCaja": 75,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "24/9/2026, 2:20:15 p.m.",
+      "UltimaEdicion": 1790274015622,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "xtAMLcF31pMmck3IIXS7",
+      "Producto": "Volt",
+      "PrecioCaja": 53,
+      "PrecioUnidad": 6,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "xzMvl5crL6hxpTxOAQJ6",
+      "Producto": "COCA COLA PERSONAL",
+      "PrecioCaja": 54,
+      "PrecioUnidad": 7,
+      "FechaEdicionTexto": "18/8/2026, 6:45:29 a.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "yL8Ununs4fEBIXSi1dLL",
+      "Producto": "Bardero",
+      "PrecioCaja": 115,
+      "PrecioUnidad": 25,
+      "FechaEdicionTexto": "1/10/2026, 12:04:34 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "yPVUtnK1VYXaq5tCBvU5",
+      "Producto": "CASINO G",
+      "PrecioCaja": 77,
+      "PrecioUnidad": 8,
+      "FechaEdicionTexto": "14/9/2026, 11:32:30 a.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "yRQkJ2lqcxJ10wLTd6TR",
+      "Producto": "MO3MA GR",
+      "PrecioCaja": 170,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "16/9/2026, 11:55:37 a.m.",
+      "UltimaEdicion": 1789574137977,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "yVUVQGmW9IbxtebXFiLn",
+      "Producto": "Insignia negro",
+      "PrecioCaja": 390,
+      "PrecioUnidad": 65,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971178,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "yytbNktENKDUXTDrpWn0",
+      "Producto": "CASA REAL ROJO",
+      "PrecioCaja": 318,
+      "PrecioUnidad": 53,
+      "FechaEdicionTexto": "19/8/2026, 10:59:42 p.m.",
+      "UltimaEdicion": 63922791584.553,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "z1DujOkEPcbCNhkmSYD9",
+      "Producto": "CIRUZ",
+      "PrecioCaja": 58,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "20/9/2026, 11:12:14 a. m.",
+      "UltimaEdicion": 1789917134372,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "z82nNdkp4v7u6SXLOBaF",
+      "Producto": "Insignia rojo",
+      "PrecioCaja": 312,
+      "PrecioUnidad": 52,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977971178,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "zWKmoi4NI3TN3OFSvgfF",
+      "Producto": "PACIFIC",
+      "PrecioCaja": 50,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 5:39:59 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "zecMugexq1PtJsDqnbV2",
+      "Producto": "Camel Sandía Chico",
+      "PrecioCaja": 210,
+      "PrecioUnidad": 11,
+      "FechaEdicionTexto": "12/9/2026, 12:06:51 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "zy4XIFCrTWHg23DkY5qO",
+      "Producto": "Simba",
+      "PrecioCaja": 58,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "22/9/2026, 12:14:10 p.m.",
+      "UltimaEdicion": 1790093650337,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "5bJzNQXjT8OqtRdt5cUT",
+      "Producto": "Soldadito de 2°da",
+      "PrecioCaja": 22,
+      "PrecioUnidad": 2,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "6kBEjwkww5QJWPQMAoLk",
+      "Producto": "Sante 1L",
+      "PrecioCaja": 60,
+      "PrecioUnidad": 10,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "7RuFIrM3Qspvfm39rayQ",
+      "Producto": "Sprite de 3 litros",
+      "PrecioCaja": 107,
+      "PrecioUnidad": 20,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "COz9z0Q5avyo1Vy60Ba6",
+      "Producto": "Mendocina 1 lt",
+      "PrecioCaja": 32,
+      "PrecioUnidad": 7,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "I7bAqKMiuZjy0g4If6RL",
+      "Producto": "Canelado Grande",
+      "PrecioCaja": 30,
+      "PrecioUnidad": 7,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "KyYydSSOPCklechoMsar",
+      "Producto": "Sante grande lila",
+      "PrecioCaja": 60,
+      "PrecioUnidad": 12,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "L0U3Lj8dM85rglIQVF19",
+      "Producto": "Cafe Chico",
+      "PrecioCaja": 104,
+      "PrecioUnidad": 10,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "LqCfTYAt11OValoS3Q7E",
+      "Producto": "Coñac Chico",
+      "PrecioCaja": 104,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "M2xLlda1JHV92NXMrX0K",
+      "Producto": "Canelado Chico",
+      "PrecioCaja": 30,
+      "PrecioUnidad": 5,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "NTOeQ8TRLeIX4kApgwKS",
+      "Producto": "Agua 1/2L",
+      "PrecioCaja": 45,
+      "PrecioUnidad": 5,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "OgKLiZdvDTyMn2G1zWAh",
+      "Producto": "Coñac litro",
+      "PrecioCaja": 235,
+      "PrecioUnidad": 40,
+      "FechaEdicionTexto": "8/9/2026, 6:24:10 p.m.",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "Q4yWOiNqLwI5DMOZTaaI",
+      "Producto": "Sprite 2 litros",
+      "PrecioCaja": 75,
+      "PrecioUnidad": 14,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "RZT90JYDoKKVAFk77g1r",
+      "Producto": "Forloko Grande",
+      "PrecioCaja": 390,
+      "PrecioUnidad": 40,
+      "FechaEdicionTexto": "22/9/2026, 7:19:43 p. m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "Wk04abWCsKtkRBwBvCdG",
+      "Producto": "Sante Personal",
+      "PrecioCaja": 120,
+      "PrecioUnidad": 7,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "YeQrFyIKcu61ups9TAeL",
+      "Producto": "Doble w chico",
+      "PrecioCaja": 230,
+      "PrecioUnidad": 12,
+      "FechaEdicionTexto": "8/9/2026, 6:17:21 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "YyKfAStc1evSrE8CbVu3",
+      "Producto": "Fanta de 3 litros",
+      "PrecioCaja": 107,
+      "PrecioUnidad": 20,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "amGhNiZhf9KeluXPaS2h",
+      "Producto": "Fanta de2 litros",
+      "PrecioCaja": 74,
+      "PrecioUnidad": 14,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "gOqTbQNDQIgZ8zNTAC7V",
+      "Producto": "Sante grande azul",
+      "PrecioCaja": 60,
+      "PrecioUnidad": 12,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "p6sT4UDoQpQ3puul17aa",
+      "Producto": "Sante grande rojo",
+      "PrecioCaja": 60,
+      "PrecioUnidad": 12,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "tZkGF9S3odSytiyNA1g4",
+      "Producto": "Camba Chico",
+      "PrecioCaja": 32,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "9/9/2026, 12:19:46 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "xzMvl5crL6hxpTxOAQJ6",
+      "Producto": "Coca Cola Persona",
+      "PrecioCaja": 54,
+      "PrecioUnidad": 7,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "zqHLOZmd2kN9iewsScWV",
+      "Producto": "Sprite de 2 litros",
+      "PrecioCaja": 74,
+      "PrecioUnidad": 14,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "local_1788905926895",
+      "Producto": "DOBLE V GR",
+      "PrecioCaja": 0,
+      "PrecioUnidad": 445,
+      "FechaEdicionTexto": "8/9/2026, 6:18:46 p.m.",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "local_1788906036125",
+      "Producto": "VIÑA DE BALBO",
+      "PrecioCaja": 122,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "8/9/2026, 6:20:36 p.m.",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "local_1788960168589",
+      "Producto": "MENTA CHICO",
+      "PrecioCaja": 104,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "9/9/2026, 9:22:48 a.m.",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "local_1788981239409",
+      "Producto": "FANTA PERSONAL",
+      "PrecioCaja": 54,
+      "PrecioUnidad": 6,
+      "FechaEdicionTexto": "9/9/2026, 3:13:59 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "local_1788983979493",
+      "Producto": "VODKA LIMON",
+      "PrecioCaja": 102,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "9/9/2026, 3:59:47 p.m.",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "local_1788986437456",
+      "Producto": "HEITER",
+      "PrecioCaja": 60,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "9/9/2026, 4:40:37 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "local_1788990614084",
+      "Producto": "ACUARIO  3 LITRO",
+      "PrecioCaja": 102,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "9/9/2026, 5:50:14 p.m.",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "local_1788991793151",
+      "Producto": "DELVALLE",
+      "PrecioCaja": 103,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "9/9/2026, 6:10:01 p.m.",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "local_1788992461163",
+      "Producto": "BOHEM YOGURTH",
+      "PrecioCaja": 130,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "9/9/2026, 6:21:29 p.m.",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "local_1788992481741",
+      "Producto": "CAMEL ACT GR.",
+      "PrecioCaja": 188,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "9/9/2026, 6:21:21 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "local_1789064788879",
+      "Producto": "AGUA 1 LITRO",
+      "PrecioCaja": 33,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "10/9/2026, 2:26:28 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "local_1789064929092",
+      "Producto": "GOLD 24K",
+      "PrecioCaja": 55,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "10/9/2026, 2:28:49 p.m.",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "local_1789066786605",
+      "Producto": "TERRUÑO TINTO",
+      "PrecioCaja": 118,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "10/9/2026, 2:59:52 p.m.",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "local_1789070366152",
+      "Producto": "JHONY NEGRO",
+      "PrecioCaja": 350,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "10/9/2026, 3:59:26 p.m.",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "local_1789070938489",
+      "Producto": "TANQUERAY",
+      "PrecioCaja": 240,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "10/9/2026, 4:08:58 p.m.",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "local_1789073265661",
+      "Producto": "PICADLOR",
+      "PrecioCaja": 21,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "10/9/2026, 4:47:45 p.m.",
+      "UltimaEdicion": 1790977199971,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "RJRDqThe2fQjBwke78Fo",
+      "Producto": "pepsi litro",
+      "PrecioCaja": 69,
+      "PrecioUnidad": 7,
+      "FechaEdicionTexto": "16/8/2026, 12:02:53 p.m.",
+      "UltimaEdicion": 63922492973.767,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "X9fZyQtcF2zQaE85PVvs",
+      "Producto": "Acuario 2 l",
+      "PrecioCaja": 72,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 18:01:24",
+      "UltimaEdicion": 1789074950815,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "4SdEcudyLrlag6f6MKz9",
+      "Producto": "CASINA ACTIVE G",
+      "PrecioCaja": 75,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "19/8/2026, 2:10:42 p. m.",
+      "UltimaEdicion": 63922759843.931,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "4b4pDqNUyXKCryiWOktW",
+      "Producto": "GRANADITA CH",
+      "PrecioCaja": 45,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "17/8/2026, 12:09:34 p.m.",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "EhB2LjFFUKm0KZftDRE4",
+      "Producto": "LM ACTIVE CH",
+      "PrecioCaja": 92,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "17/8/2026, 12:09:12 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "9PJSvnOdEbexIO7k7C7i",
+      "Producto": "Kolbert blanco",
+      "PrecioCaja": 127,
+      "PrecioUnidad": 25,
+      "FechaEdicionTexto": "26/9/2026, 4:26:01 p.m.",
+      "UltimaEdicion": 1790978483804,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    },
+    {
+      "idDoc": "prod_1790978483803_fr7z1p",
+      "Producto": "Ciclon",
+      "PrecioCaja": 67,
+      "PrecioUnidad": 0,
+      "FechaEdicionTexto": "2/10/2026, 18:01:23",
+      "UltimaEdicion": 1790978483803,
+      "actualizadoPor": "sebasrocktapia2016@gmail.com"
+    }
+  ]
+}

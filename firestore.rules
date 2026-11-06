@@ -1,0 +1,96 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // --- Helpers ---
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isEmailVerified() {
+      // Allow for both verified and unverified for now if needed, 
+      // but following the skill's suggestion for verification.
+      return request.auth.token.email_verified == true;
+    }
+
+    function isAuthorizedUser() {
+      let authorizedEmails = [
+        "sebasrickytapia@gmail.com",
+        "sebasrocktapia2016@gmail.com",
+        "marcelamolinaescobar@gmail.com",
+        "carolrosely23@gmail.com",
+        "ricktapiakodak@gmail.com",
+        "samantaetapiamolina@gmail.com",
+        "siberleandra@gmail.com"
+      ];
+      return isSignedIn() && request.auth.token.email in authorizedEmails;
+    }
+
+    function isAdmin() {
+      // In this app, all authorized users are admins according to auth.js
+      return isAuthorizedUser();
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    // --- Validation Blueprints ---
+
+    function isValidVenta(venta) {
+      return venta.keys().hasAll(['CodigoNota', 'Cliente', 'Total', 'Items'])
+        && venta.CodigoNota is string && venta.CodigoNota.size() <= 32
+        && venta.Cliente is string && venta.Cliente.size() <= 128
+        && venta.Total is number
+        && venta.Items is list;
+    }
+
+    function isValidProducto(producto) {
+      return producto.keys().hasAll(['Producto'])
+        && producto.Producto is string && producto.Producto.size() <= 256;
+    }
+
+    // --- Collections ---
+
+    match /Ventas/{ventaId} {
+      allow get, list: if isAuthorizedUser();
+      allow create: if isAuthorizedUser() && isValidVenta(incoming());
+      allow update: if isAuthorizedUser() && isValidVenta(incoming());
+      allow delete: if isAdmin();
+    }
+
+    match /Productos/{productoId} {
+      allow get, list: if isAuthorizedUser();
+      allow create, update, delete: if isAdmin() && isValidProducto(incoming());
+    }
+
+    match /Metadata/{docId} {
+      allow get, list: if isAuthorizedUser();
+      allow create, update: if isAuthorizedUser();
+      allow delete: if isAdmin();
+    }
+
+    match /Catalogos/{docId} {
+      allow get, list: if isAuthorizedUser();
+      allow create, update: if isAuthorizedUser();
+      allow delete: if isAdmin();
+    }
+
+    match /BloqueosNotas/{docId} {
+      allow get, list: if isAuthorizedUser();
+      allow create, update, delete: if isAuthorizedUser();
+    }
+  }
+}

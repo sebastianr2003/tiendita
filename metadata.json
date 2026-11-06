@@ -1,0 +1,6 @@
+{
+  "name": "Sistema de Ventas",
+  "description": "Sistema de ventas y generación de notas de venta/tickets con sincronización Firebase",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

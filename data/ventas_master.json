@@ -1,0 +1,47 @@
+{
+  "version": 6,
+  "ultimaActualizacion": "2026-10-04T16:24:43.183Z",
+  "ventas": [
+    {
+      "idDoc": "local_1791130849762_yi7nn",
+      "CodigoNota": "#NV-0939",
+      "codigoNota": "#NV-0939",
+      "Lista": "#NV-0939",
+      "lista": "#NV-0939",
+      "Cliente": "CLIENTE",
+      "cliente": "CLIENTE",
+      "Total": 65,
+      "total": 65,
+      "Items": [
+        {
+          "producto": "37 LEGUAS (Caja)",
+          "detalle": "-",
+          "cantidad": 1,
+          "precio": 65,
+          "subtotal": 65
+        }
+      ],
+      "items": [
+        {
+          "producto": "37 LEGUAS (Caja)",
+          "detalle": "-",
+          "cantidad": 1,
+          "precio": 65,
+          "subtotal": 65
+        }
+      ],
+      "FechaTexto": "4/10/2026, 12:20:49",
+      "fechaTexto": "4/10/2026, 12:20:49",
+      "fecha": "4/10/2026, 12:20:49",
+      "timestamp": 1791130849.748,
+      "ts": 1791130849748,
+      "FechaTimestamp": 1791130849748,
+      "fechaTimestamp": 1791130849748,
+      "VendedorNombre": "sebastian tapia molina",
+      "vendedorNombre": "sebastian tapia molina",
+      "VendedorEmail": "sebasrocktapia2016@gmail.com",
+      "vendedorEmail": "sebasrocktapia2016@gmail.com",
+      "actualizadoEn": "2026-10-04T16:20:49.888Z"
+    }
+  ]
+}

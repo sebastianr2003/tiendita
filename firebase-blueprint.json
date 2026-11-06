@@ -1,0 +1,141 @@
+{
+  "entities": {
+    "Venta": {
+      "title": "Venta",
+      "description": "Representa una nota de venta o recibo.",
+      "type": "object",
+      "properties": {
+        "CodigoNota": {
+          "type": "string",
+          "description": "Código único de la nota (ej. #NV-1454)."
+        },
+        "Cliente": {
+          "type": "string",
+          "description": "Nombre del cliente."
+        },
+        "Total": {
+          "type": "number",
+          "description": "Monto total de la venta."
+        },
+        "Items": {
+          "type": "array",
+          "description": "Lista de productos vendidos.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "producto": { "type": "string" },
+              "detalle": { "type": "string" },
+              "cantidad": { "type": "number" },
+              "precio": { "type": "number" },
+              "subtotal": { "type": "number" }
+            }
+          }
+        },
+        "Fecha": {
+          "type": "object",
+          "description": "Firestore Timestamp."
+        },
+        "FechaTexto": {
+          "type": "string"
+        },
+        "FechaTimestamp": {
+          "type": "number"
+        },
+        "SyncTimestamp": {
+          "type": "number"
+        },
+        "VendedorNombre": {
+          "type": "string"
+        },
+        "VendedorEmail": {
+          "type": "string"
+        },
+        "EditadoPor": {
+          "type": "string"
+        },
+        "DeviceId": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "CodigoNota",
+        "Cliente",
+        "Total",
+        "Items"
+      ]
+    },
+    "Producto": {
+      "title": "Producto",
+      "description": "Un producto en el catálogo.",
+      "type": "object",
+      "properties": {
+        "Producto": {
+          "type": "string"
+        },
+        "PrecioCaja": {
+          "type": "number"
+        },
+        "PrecioUnidad": {
+          "type": "number"
+        },
+        "FechaEdicionTexto": {
+          "type": "string"
+        },
+        "UltimaEdicion": {
+          "type": "number"
+        },
+        "actualizadoPor": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Producto"
+      ]
+    },
+    "Metadata": {
+      "title": "Metadata",
+      "description": "Metadatos del sistema como correlativos y catálogo consolidado.",
+      "type": "object",
+      "properties": {
+        "actualizadoPor": { "type": "string" },
+        "ultimaModificacion": { "type": "number" },
+        "ultimoCodigo": { "type": "string" },
+        "ultimoNumero": { "type": "number" },
+        "lista": { "type": "array" },
+        "total": { "type": "number" },
+        "version": { "type": "number" }
+      }
+    },
+    "Bloqueo": {
+      "title": "Bloqueo",
+      "description": "Bloqueo de edición para una nota.",
+      "type": "object",
+      "properties": {
+        "usuario": { "type": "string" },
+        "timestamp": { "type": "number" }
+      }
+    }
+  },
+  "firestore": {
+    "/Ventas/{ventaId}": {
+      "schema": "Venta",
+      "description": "Colección de ventas."
+    },
+    "/Productos/{productoId}": {
+      "schema": "Producto",
+      "description": "Catálogo de productos."
+    },
+    "/Metadata/{docId}": {
+      "schema": "Metadata",
+      "description": "Metadatos del sistema (Correlativo, Catalogo)."
+    },
+    "/Catalogos/{docId}": {
+      "schema": "Metadata",
+      "description": "Caché maestra consolidada (productos_activos)."
+    },
+    "/BloqueosNotas/{docId}": {
+      "schema": "Bloqueo",
+      "description": "Bloqueos de edición en tiempo real."
+    }
+  }
+}

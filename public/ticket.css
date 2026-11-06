@@ -1,0 +1,1163 @@
+/* ticket.css */
+.ticket-preview-box,
+#ticket-impresion {
+    font-family: "Courier New", Courier, monospace !important;
+    font-weight: 900 !important;
+    font-size: 14px !important;
+    letter-spacing: -0.4px !important;
+    line-height: 1.25 !important;
+    color: #000000 !important;
+    background: #ffffff !important;
+    box-sizing: border-box !important;
+}
+
+.ticket-preview-box {
+    border: 1.5px dashed #cbd5e1;
+    border-radius: 8px;
+    padding: 12px 10px;
+    flex: 1 1 auto;
+    min-height: 220px;
+    max-height: calc(85vh - 165px);
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    overscroll-behavior-y: contain !important;
+    margin-bottom: 12px;
+    background: #ffffff;
+}
+
+.ticket-preview-box .flex-row,
+#ticket-impresion .flex-row {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    font-weight: 900 !important;
+    font-size: 14px !important;
+}
+
+.ticket-preview-box .producto-nombre,
+#ticket-impresion .producto-nombre,
+#ticket-impresion .ticket-item-title {
+    text-align: left !important;
+    width: 100% !important;
+    display: block !important;
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+    font-size: 15px !important;
+    font-weight: 900 !important;
+    letter-spacing: -0.3px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 2px !important;
+}
+
+.ticket-preview-box .producto-cant-precio,
+#ticket-impresion .producto-cant-precio,
+#ticket-impresion .flex-row span:first-child {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    text-align: left !important;
+    white-space: nowrap !important;
+}
+
+.ticket-preview-box .producto-subtotal,
+#ticket-impresion .producto-subtotal,
+#ticket-impresion .flex-row span:last-child {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    text-align: right !important;
+    white-space: nowrap !important;
+}
+
+.ticket-preview-box .producto-detalle,
+.ticket-preview-box .ticket-item-detail,
+#ticket-impresion .producto-detalle,
+#ticket-impresion .ticket-item-detail {
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    font-style: italic !important;
+    color: #475569 !important;
+    text-align: left !important;
+    width: 100% !important;
+    display: block !important;
+    word-break: break-word !important;
+    line-height: 1.15 !important;
+    margin-top: -1px !important;
+    margin-bottom: 2px !important;
+}
+
+.ticket-preview-box .ticket-titulo,
+.ticket-preview-box .ticket-recibo-titulo,
+#ticket-impresion .ticket-titulo,
+#ticket-impresion .ticket-recibo-titulo {
+    text-align: center !important;
+    font-weight: 900 !important;
+    font-size: 15px !important;
+    line-height: 1.1 !important;
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+}
+
+.ticket-preview-box .ticket-total,
+.ticket-preview-box .ticket-total-row,
+#ticket-impresion .ticket-total,
+#ticket-impresion .total-row,
+#ticket-impresion .ticket-total-row,
+#ticket-impresion #ticket-total {
+    font-size: 16px !important;
+    font-weight: 900 !important;
+    text-align: right !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+    padding-bottom: 0 !important;
+}
+
+/* Paginación limpia y continua para tickets térmicos y multipágina:
+   Cada ítem individual se mantiene íntegro (evita que se corte a la mitad el nombre o el precio),
+   mientras que el contenedor, la lista y el flujo general permiten paginación natural continua. */
+.ticket-item-bloque {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    page-break-before: auto !important;
+    break-before: auto !important;
+    page-break-after: auto !important;
+    break-after: auto !important;
+}
+
+.ticket-header-bloque {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    page-break-before: auto !important;
+    break-before: auto !important;
+    page-break-after: auto !important;
+    break-after: auto !important;
+}
+
+.ticket-total-bloque,
+.ticket-total-row {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    page-break-before: auto !important;
+    break-before: auto !important;
+    page-break-after: auto !important;
+    break-after: auto !important;
+}
+
+.ticket-contenedor-impresion,
+.ticket-items-lista {
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+    page-break-before: auto !important;
+    break-before: auto !important;
+    page-break-after: auto !important;
+    break-after: auto !important;
+}
+
+.ticket-espacio-corte {
+    width: 100%;
+    height: 0 !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block;
+    clear: both;
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+}
+
+#ticket-impresion {
+    display: none !important;
+    visibility: hidden !important;
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
+    opacity: 0 !important;
+}
+
+@media print {
+    @page {
+        margin: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        size: 80mm; /* Dimensión estándar 80mm para rollo térmico */
+    }
+
+    /* 1. Ocultar de manera estricta y absoluta todo elemento hijo directo del body excepto #ticket-impresion */
+    body > *:not(#ticket-impresion) {
+        display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        max-height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        overflow: hidden !important;
+        opacity: 0 !important;
+    }
+
+    /* 2. Ocultar cualquier componente de interfaz que pudiera filtrarse */
+    header,
+    nav,
+    main,
+    footer,
+    table,
+    thead,
+    tbody,
+    tr,
+    th,
+    td,
+    .container,
+    .seccion,
+    .tabla-responsive-container,
+    #tablaCarrito,
+    .barra-inferior-unificada,
+    .dock-fila-superior,
+    .contenedor-acciones-finales,
+    .modal-overlay,
+    .btn-flotante,
+    .fab-agregar-producto,
+    #bannerCarritoEmpachado,
+    #modalVistaPrevia,
+    #modalConfirmacionCustom,
+    #modalNuevoProducto,
+    #modalHistorial,
+    #modalSeleccionarProducto,
+    #toast-notificacion,
+    #toastNotificacion,
+    #sugerencias-cliente,
+    #sugerencias-producto,
+    #listaSugerenciasClientes,
+    #listaSugerenciasProductos {
+        display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        max-height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        overflow: hidden !important;
+        opacity: 0 !important;
+    }
+
+    /* 3. Evitar corte por bloqueo de scroll del modal o alturas fijas.
+       CRUCIAL: html y body deben tener overflow visible, altura auto y break-inside: auto para que notas largas fluyan sin corte */
+    html,
+    body,
+    body.modal-abierto-bloquear-scroll {
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #ffffff !important;
+        color: #000000 !important;
+        width: 80mm !important;
+        max-width: 80mm !important;
+        min-width: 80mm !important;
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: none !important;
+        overflow: visible !important;
+        overflow-x: visible !important;
+        overflow-y: visible !important;
+        position: static !important;
+        float: none !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    /* 4. Re-habilitar de forma exclusiva el contenedor de impresión aprovechando el ancho real de 80mm */
+    #ticket-impresion {
+        display: block !important;
+        visibility: visible !important;
+        position: static !important;
+        width: 80mm !important;
+        max-width: 80mm !important;
+        min-width: 80mm !important;
+        margin: 0 auto !important;
+        margin-bottom: 0 !important;
+        padding: 0 1.5mm 0 1.5mm !important;
+        font-family: "Courier New", Courier, monospace !important;
+        font-weight: 900 !important;
+        font-size: 14.5px !important;
+        letter-spacing: -0.2px !important;
+        line-height: 1.25 !important;
+        color: #000000 !important;
+        background: #ffffff !important;
+        box-sizing: border-box !important;
+        overflow: visible !important;
+        height: auto !important;
+        max-height: none !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        page-break-before: avoid !important;
+        break-before: auto !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+    }
+
+    #ticket-impresion > *:last-child,
+    .ticket-contenedor-impresion > *:last-child,
+    .ticket-total-bloque,
+    .ticket-total-bloque > *:last-child,
+    .ticket-espacio-corte {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+    }
+
+    #ticket-impresion div,
+    #ticket-impresion p,
+    #ticket-impresion .ticket-header-bloque,
+    #ticket-impresion .ticket-item-bloque,
+    #ticket-impresion .ticket-total-bloque,
+    #ticket-impresion .producto-nombre,
+    #ticket-impresion .producto-detalle,
+    #ticket-impresion .ticket-titulo,
+    #ticket-impresion .ticket-linea {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        clear: both !important;
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+    }
+
+    #ticket-impresion .ticket-hr {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        width: 100% !important;
+        height: 0 !important;
+        min-height: 0 !important;
+        border: none !important;
+        border-bottom: 1px dashed #000000 !important;
+        margin: 4px 0 !important;
+        padding: 0 !important;
+        clear: both !important;
+    }
+
+    #ticket-impresion hr {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        width: 100% !important;
+        height: 0 !important;
+        min-height: 0 !important;
+        border: none !important;
+        border-bottom: 1px dashed #000000 !important;
+        margin: 4px 0 !important;
+        padding: 0 !important;
+        clear: both !important;
+    }
+
+    #ticket-impresion .ticket-item-bloque div,
+    #ticket-impresion .ticket-total-row {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    #ticket-impresion .producto-cant-precio {
+        text-align: left !important;
+        white-space: nowrap !important;
+        display: inline-block !important;
+        font-weight: 400 !important;
+    }
+
+    #ticket-impresion .producto-subtotal {
+        text-align: right !important;
+        white-space: nowrap !important;
+        display: inline-block !important;
+        font-weight: 400 !important;
+    }
+
+    .ticket-contenedor-impresion {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+        overflow: visible !important;
+        height: auto !important;
+        max-height: none !important;
+        page-break-inside: auto !important;
+        break-inside: auto !important;
+        page-break-before: auto !important;
+        break-before: auto !important;
+        page-break-after: auto !important;
+        break-after: auto !important;
+    }
+
+    .ticket-items-lista {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+        overflow: visible !important;
+        height: auto !important;
+        max-height: none !important;
+        page-break-inside: auto !important;
+        break-inside: auto !important;
+        page-break-before: auto !important;
+        break-before: auto !important;
+        page-break-after: auto !important;
+        break-after: auto !important;
+    }
+
+    .ticket-item-bloque {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        page-break-before: auto !important;
+        break-before: auto !important;
+        page-break-after: auto !important;
+        break-after: auto !important;
+        overflow: visible !important;
+        height: auto !important;
+        max-height: none !important;
+        margin-bottom: 5px !important;
+    }
+
+    .ticket-header-bloque {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        page-break-before: auto !important;
+        break-before: auto !important;
+        page-break-after: auto !important;
+        break-after: auto !important;
+        overflow: visible !important;
+        height: auto !important;
+        max-height: none !important;
+    }
+
+    .ticket-total-bloque,
+    .ticket-total-row {
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        page-break-before: auto !important;
+        break-before: auto !important;
+        page-break-after: auto !important;
+        break-after: auto !important;
+        overflow: visible !important;
+        height: auto !important;
+        max-height: none !important;
+    }
+
+    /* Espacio de avance de papel térmico mínimo para evitar zonas muertas */
+    .ticket-espacio-corte {
+        display: block !important;
+        visibility: visible !important;
+        width: 100% !important;
+        height: 0.5mm !important;
+        min-height: 0.5mm !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        clear: both !important;
+        page-break-before: avoid !important;
+        break-before: avoid !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+    }
+}
+
+/* --- REGLAS MULTIDISPOSITIVO (RESPONSIVE ADAPTATIONS) --- */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 6px !important;
+        padding-bottom: 180px !important;
+    }
+
+    .seccion, .container {
+        padding: 10px !important;
+        margin-bottom: 8px !important;
+        border-radius: 6px !important;
+    }
+
+    .grid-tendencia {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 6px !important;
+    }
+
+    .btn-tendencia {
+        padding: 10px 4px !important;
+        font-size: 13px !important;
+    }
+
+    .fila-input {
+        flex-direction: column !important;
+        gap: 0 !important;
+    }
+
+    .col-cliente, .col-lista {
+        flex: 1 !important;
+        width: 100% !important;
+    }
+
+    .contenedor-acciones-finales {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 6px !important;
+    }
+
+    .contenedor-acciones-finales button {
+        min-height: 44px !important;
+        padding: 0 4px !important;
+        font-size: 14px !important;
+        border-radius: 8px !important;
+    }
+
+    .modal-contenido, .historial-contenido {
+        max-width: 100% !important;
+        height: 100% !important;
+        max-height: 100vh !important;
+        padding: 12px !important;
+        border-radius: 14px 14px 26px 26px !important;
+        position: sticky !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+    }
+}
+
+#modalVistaPrevia .modal-contenido {
+    border-radius: 18px 18px 28px 28px !important;
+    padding-bottom: 20px !important;
+}
+
+/* ==========================================================================
+   ESTILOS Y ANIMACIONES: GATITOS PIXEL ART (LECTURA Y ENOJADO SIN WIFI)
+   ========================================================================== */
+.pixel-cat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+    text-align: center;
+    user-select: none;
+}
+
+.pixel-cat-svg-wrapper {
+    position: relative;
+    display: inline-block;
+    image-rendering: pixelated;
+    shape-rendering: crispEdges;
+}
+
+.pixel-cat-svg {
+    image-rendering: pixelated;
+    shape-rendering: crispEdges;
+    width: 84px;
+    height: 84px;
+    display: block;
+}
+
+.cat-reading-anim {
+    animation: catReadingBreath 2s infinite ease-in-out;
+}
+
+.cat-page-flip {
+    animation: catPageTurn 2s infinite ease-in-out;
+    transform-origin: 10px 14px;
+}
+
+.cat-tail-wag {
+    animation: catTailMove 1.8s infinite ease-in-out;
+    transform-origin: 15px 14px;
+}
+
+@keyframes catReadingBreath {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-2px) scale(1.02); }
+}
+
+@keyframes catPageTurn {
+    0%, 100% { transform: scaleX(1); opacity: 1; }
+    50% { transform: scaleX(0.7) skewY(-4deg); opacity: 0.85; }
+}
+
+@keyframes catTailMove {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(8deg); }
+}
+
+.cat-angry-anim {
+    animation: catAngryVibe 1.2s infinite ease-in-out;
+}
+
+.cat-angry-steam {
+    animation: catSteamFloat 1.2s infinite ease-in-out;
+}
+
+.cat-no-wifi-pulse {
+    animation: catWifiBlink 1s infinite alternate;
+}
+
+@keyframes catAngryVibe {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    20% { transform: translate(-1.5px, 0.5px) rotate(-1deg); }
+    40% { transform: translate(1.5px, -0.5px) rotate(1deg); }
+    60% { transform: translate(-1px, -0.5px) rotate(-0.5deg); }
+    80% { transform: translate(1px, 0.5px) rotate(0.5deg); }
+}
+
+@keyframes catSteamFloat {
+    0%, 100% { transform: translateY(0) scale(0.9); opacity: 0.6; }
+    50% { transform: translateY(-3px) scale(1.15); opacity: 1; }
+}
+
+@keyframes catWifiBlink {
+    0% { opacity: 0.4; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1.05); }
+}
+
+.pixel-cat-titulo {
+    font-size: 15px;
+    font-weight: 800;
+    color: #1e293b;
+    margin-top: 14px;
+    margin-bottom: 4px;
+    letter-spacing: -0.2px;
+}
+
+.pixel-cat-desc {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #64748b;
+    max-width: 280px;
+    line-height: 1.35;
+    margin-bottom: 12px;
+}
+
+.banner-offline-cat-mini {
+    background: #fff1f2;
+    border: 1.5px solid #fecdd3;
+    border-radius: 12px;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 1px 4px rgba(225, 29, 72, 0.08);
+}
+
+.banner-offline-cat-mini .cat-mini-svg {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    image-rendering: pixelated;
+    shape-rendering: crispEdges;
+}
+
+.banner-offline-cat-mini .cat-mini-info {
+    flex: 1;
+    text-align: left;
+}
+
+.banner-offline-cat-mini .cat-mini-titulo {
+    font-size: 13px;
+    font-weight: 800;
+    color: #9f1239;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.banner-offline-cat-mini .cat-mini-sub {
+    font-size: 11px;
+    font-weight: 600;
+    color: #be123c;
+    line-height: 1.25;
+    margin-top: 2px;
+}
+
+.btn-cat-reintentar {
+    background: #e11d48;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 12.5px;
+    font-weight: 800;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 5px rgba(225, 29, 72, 0.25);
+    transition: transform 0.15s ease, background 0.15s ease;
+    min-height: 38px;
+    touch-action: manipulation;
+}
+
+.btn-cat-reintentar:active {
+    transform: scale(0.96);
+    background: #be123c;
+}
+
+/* ==========================================================================
+   CALCULADORA DE RESTA / VUELTO FLOTANTE (MODAL OVERLAY)
+   ========================================================================== */
+.btn-reimprimir-historial.btn-calc-resta {
+    background-color: #f4f4f5 !important;
+    color: #3f3f46 !important;
+    border: 1px solid #e4e4e7 !important;
+    padding: 6px 8px !important;
+    font-size: 14px !important;
+    min-width: 36px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.btn-reimprimir-historial.btn-calc-resta:hover {
+    background-color: #e4e4e7 !important;
+    color: #27272a !important;
+}
+
+/* ==========================================================================
+   BOTONES MODAL VISTA PREVIA (CANCELAR, CALC, COMPARTIR, IMPRIMIR)
+   ========================================================================== */
+.modal-acciones-vista-previa {
+    display: flex !important;
+    gap: 8px !important;
+    width: 100% !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    margin-top: 10px !important;
+    box-sizing: border-box !important;
+}
+
+.modal-acciones-vista-previa > button,
+.modal-acciones-vista-previa > .btn-modal-cerrar,
+.modal-acciones-vista-previa > .btn-modal-calc,
+.modal-acciones-vista-previa > .btn-modal-compartir,
+.modal-acciones-vista-previa > .btn-modal-imprimir {
+    flex: 1 1 0% !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: 44px !important;
+    min-height: 44px !important;
+    padding: 0 4px !important;
+    margin: 0 !important;
+    border-radius: 12px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 13.5px !important;
+    font-weight: 800 !important;
+    cursor: pointer !important;
+    touch-action: manipulation !important;
+    box-sizing: border-box !important;
+    transition: all 0.15s ease !important;
+}
+
+.modal-acciones-vista-previa > button:active {
+    transform: scale(0.96) !important;
+}
+
+.btn-modal-cerrar {
+    background-color: #fff1f2 !important;
+    color: #9f1239 !important;
+    border: 1.5px solid #fecdd3 !important;
+    box-shadow: 0 1px 2px rgba(159, 18, 57, 0.05) !important;
+}
+
+.btn-modal-cerrar:hover, .btn-modal-cerrar:active {
+    background-color: #ffe4e6 !important;
+    border-color: #fda4af !important;
+    color: #881337 !important;
+}
+
+.btn-modal-calc {
+    background-color: #f0fdf4 !important;
+    color: #166534 !important;
+    border: 1.5px solid #bbf7d0 !important;
+    box-shadow: 0 1px 2px rgba(22, 101, 52, 0.05) !important;
+}
+
+.btn-modal-calc:hover, .btn-modal-calc:active {
+    background-color: #dcfce7 !important;
+    border-color: #86efac !important;
+    color: #14532d !important;
+}
+
+.btn-modal-compartir {
+    background-color: #f0f9ff !important;
+    color: #0284c7 !important;
+    border: 1.5px solid #bae6fd !important;
+    box-shadow: 0 1px 2px rgba(29, 78, 216, 0.05) !important;
+}
+
+.btn-modal-compartir:hover, .btn-modal-compartir:active {
+    background-color: #e0f2fe !important;
+    border-color: #7dd3fc !important;
+    color: #0369a1 !important;
+}
+
+.btn-modal-imprimir {
+    background-color: #ecfdf5 !important;
+    color: #047857 !important;
+    border: 1.5px solid #a7f3d0 !important;
+    box-shadow: 0 1px 2px rgba(4, 120, 87, 0.05) !important;
+}
+
+.btn-modal-imprimir:hover, .btn-modal-imprimir:active {
+    background-color: #d1fae5 !important;
+    border-color: #6ee7b7 !important;
+    color: #065f46 !important;
+}
+
+.icono-calc-svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icono-tiktok-share-svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icono-impresora-modal-svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#modalCalculadoraFlotante,
+#modalCalculadoraFlotanteAdmin {
+    align-items: flex-start !important;
+    padding-top: max(14px, env(safe-area-inset-top)) !important;
+    padding-bottom: 14px !important;
+    box-sizing: border-box !important;
+}
+
+#modalCalculadoraFlotante .modal-calc-flotante-contenido,
+#modalCalculadoraFlotanteAdmin .modal-calc-flotante-contenido {
+    max-width: 380px !important;
+    width: 92% !important;
+    padding: 14px 14px !important;
+    border-radius: 16px !important;
+    border: 1.5px solid #d4d4d8 !important;
+    box-shadow: 0 16px 36px rgba(15, 23, 42, 0.28), 0 6px 16px rgba(161, 161, 170, 0.18) !important;
+    background: #f4f4f5 !important;
+    height: auto !important;
+    max-height: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    animation: zoomInCalc 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+@keyframes zoomInCalc {
+    0% {
+        opacity: 0;
+        transform: scale(0.94) translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.calc-top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    gap: 8px;
+}
+
+.calc-top-titulo {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #0369a1;
+}
+
+.calc-nota-tag {
+    background: #e0f2fe;
+    color: #0369a1;
+    border: 1px solid #bae6fd;
+    border-radius: 6px;
+    padding: 2px 7px;
+    font-size: 11.5px;
+    font-weight: 800;
+}
+
+.btn-cerrar-calc-top {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    color: #475569;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    touch-action: manipulation;
+    transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.btn-cerrar-calc-top:hover, .btn-cerrar-calc-top:active {
+    background: #e2e8f0;
+    color: #0f172a;
+    transform: scale(0.94);
+}
+
+.calc-formula-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1.2fr;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.calc-box-total-fila {
+    margin-bottom: 8px !important;
+    background: #f8fafc !important;
+    padding: 7px 10px !important;
+    min-height: 48px !important;
+}
+
+.calc-pagos-doble-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.calc-operator-plus {
+    font-size: 17px;
+    font-weight: 900;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    padding: 0 2px;
+}
+
+.calc-box-input {
+    padding: 3px 4px !important;
+    background: #ffffff !important;
+    cursor: pointer;
+    min-height: 52px !important;
+}
+
+.calc-box {
+    background: #f8fafc;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 6px 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 52px;
+}
+
+.calc-box-label {
+    font-size: 10px;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-bottom: 2px;
+}
+
+.calc-box-monto-base {
+    font-size: 15px;
+    font-weight: 900;
+    color: #1e293b;
+    white-space: nowrap;
+}
+
+.calc-operator {
+    font-size: 18px;
+    font-weight: 900;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.calc-input-monto {
+    width: 100%;
+    border: 2px solid #38bdf8;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 6px 4px;
+    font-size: 16px;
+    font-weight: 900;
+    color: #0284c7;
+    text-align: center;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    -moz-appearance: textfield;
+}
+
+.calc-input-monto::-webkit-outer-spin-button,
+.calc-input-monto::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.calc-input-monto:focus {
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+.calc-box-resultado {
+    background: #f0fdf4;
+    border: 1.5px solid #86efac;
+    border-radius: 10px;
+    padding: 8px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 52px;
+    margin-bottom: 8px;
+    transition: all 0.2s ease;
+}
+
+.calc-box-resultado.resultado-negativo {
+    background: #fef2f2;
+    border-color: #fca5a5;
+}
+
+.calc-box-resultado.resultado-positivo {
+    background: #f0f9ff;
+    border-color: #7dd3fc;
+}
+
+.calc-box-resultado.resultado-cero {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+.calc-res-valor {
+    font-size: 16px;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+.resultado-positivo .calc-res-valor {
+    color: #0284c7;
+}
+
+.resultado-negativo .calc-res-valor {
+    color: #dc2626;
+}
+
+.resultado-cero .calc-res-valor {
+    color: #15803d;
+}
+
+.calc-badge-estado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 11.5px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.calc-badge-estado.estado-positivo {
+    background: #e0f2fe;
+    color: #0369a1;
+    border: 1px solid #bae6fd;
+}
+
+.calc-badge-estado.estado-negativo {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+
+.calc-badge-estado.estado-cero {
+    background: #dcfce7;
+    color: #166534;
+    border: 1px solid #bbf7d0;
+}
+
+.calc-pills-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+}
+
+.calc-pills-row::-webkit-scrollbar {
+    display: none;
+}
+
+.calc-pill-btn {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    color: #334155;
+    padding: 5px 9px;
+    border-radius: 7px;
+    font-size: 11.5px;
+    font-weight: 800;
+    white-space: nowrap;
+    cursor: pointer;
+    touch-action: manipulation;
+    transition: all 0.12s ease;
+    flex-shrink: 0;
+}
+
+.calc-pill-btn:hover, .calc-pill-btn:active {
+    background: #e2e8f0;
+    color: #0f172a;
+    transform: scale(0.96);
+}
+
+.calc-pill-btn.pill-exacto {
+    background: #e0f2fe;
+    border-color: #7dd3fc;
+    color: #0369a1;
+}
+
+.calc-pill-btn.pill-borrar {
+    background: #fee2e2;
+    border-color: #fca5a5;
+    color: #991b1b;
+}
+
+

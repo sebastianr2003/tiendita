@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: 39 30% 97%; /* #FBF9F5 */
+    --surface-light: 40 33% 93%; /* #F3EFE6 */
+    --surface-dark: 41 26% 87%; /* #EAE3D2 */
+    --primary: 37 97% 38%; /* #C27803 */
+    --secondary: 154 33% 26%; /* #2D5A43 */
+    --text: 217 33% 15%; /* #1E293B */
+    --border: 39 30% 83%; /* #DFD7C7 */
+  }
+
+  html {
+    height: 100dvh;
+    overflow: hidden;
+  }
+
+  body {
+    background-color: #FBF9F5;
+    color: #1E293B;
+    font-family: 'Space Grotesk', sans-serif;
+    height: 100dvh;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+  }
+
+  #root {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  .btn-warm {
+    @apply h-12 px-6 rounded-2xl font-bold flex items-center justify-center transition-all active:scale-95 touch-manipulation select-none;
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .surface-card {
+    @apply bg-surface-light border border-border rounded-2xl shadow-sm;
+  }
+
+  .inset-shadow {
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
